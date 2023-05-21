@@ -1,0 +1,88 @@
+﻿<!--%@ Page Language="C#" AutoEventWireup="true" CodeBehind="FlightLogger.aspx.cs" Inherits="Odedprojectpleasework.FlightLogger" %-->
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head runat="server">
+    <link rel="stylesheet" href="style.css" />
+    <title>Flight Logger</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <div class="header">
+      <table>
+        <td><a href="index.aspx">Home</a></td>
+        <td class="pageName">Flight Logger</td>
+        <td><a href="logout.aspx">Logout</a></td>
+      </table>
+    </div>
+    <form action="">
+      <div class="logParent">
+        <div class="logMain">
+          <table>
+            <tr>
+              <td>Date</td>
+              <td><input type="date" name="logDate" id="logDate" /></td>
+              <td>Identification of Aircraft</td>
+              <td><input type="text" name="logID" id="logID" /></td>
+            </tr>
+            <tr>
+              <td>Time of Departure</td>
+              <td><input type="time" name="logTakeoff" id="logTakeoff" /></td>
+              <td>Airport of Departure</td>
+              <td>
+                <input
+                  type="text"
+                  name="logAirportTakeoff"
+                  id="logAirportTakeoff"
+                />
+              </td>
+            </tr>
+            <tr>
+              <td>Time of Landing</td>
+              <td><input type="time" name="logLanding" id="logLanding" /></td>
+              <td>Airport of Destination</td>
+              <td>
+                <input
+                  type="text"
+                  name="logAirportLanding"
+                  id="logAirportLanding"
+                />
+              </td>
+            </tr>
+            <tr>
+              <td>Type of Aircraft</td>
+              <td>
+                <select name="logAirType" id="logAirType">
+                  <option value="Airplane" selected>Airplane</option>
+                  <option value="Helicopter">Helicopter</option>
+                  <option value="Gliders">Glider</option>
+                  <option value="Balloon">Balloon</option>
+                  <option value="Blimp">Blimp</option>
+                  <option value="Drone">Drone</option>
+                  <option value="Other">Other</option>
+                </select>
+              </td>
+              <td>Model of Aircraft</td>
+              <td>
+                <input type="text" name="logModel" id="logModel" />
+              </td>
+            </tr>
+            <tr>
+              <td>Notes</td>
+              <td colspan="3">
+                <textarea name="logNotes" id="logNotes"></textarea>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </form>
+  </body>
+</html>
