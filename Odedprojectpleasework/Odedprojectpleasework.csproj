@@ -67,6 +67,8 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="about.aspx" />
+    <Content Include="airports.aspx" />
     <Content Include="App_Data\Database1.mdf" />
     <Content Include="App_Data\Database1_log.ldf">
       <DependentUpon>Database1.mdf</DependentUpon>
@@ -75,7 +77,10 @@
     <Content Include="App_Data\app_log.ldf">
       <DependentUpon>app.mdf</DependentUpon>
     </Content>
-    <Content Include="FlightLogger.aspx" />
+    <Content Include="dashboard.aspx" />
+    <Content Include="flightlogger.aspx" />
+    <Content Include="flights.aspx" />
+    <Content Include="gallery.aspx" />
     <Content Include="Global.asax" />
     <Content Include="HtmlPage1.html" />
     <Content Include="Images\image1.jpeg" />
@@ -84,22 +89,58 @@
     <Content Include="Images\image4.jpeg" />
     <Content Include="Images\image5.jpeg" />
     <Content Include="index.aspx" />
+    <Content Include="login.aspx" />
     <Content Include="script.js" />
+    <Content Include="signup.aspx" />
     <Content Include="style.css" />
     <Content Include="unreachable.aspx" />
     <Content Include="Web.config" />
     <Content Include="Sign_Up.aspx" />
-    <Content Include="Login.aspx" />
     <Content Include="myFlights.aspx" />
     <Content Include="logout.aspx" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="FlightLogger.aspx.cs">
-      <DependentUpon>FlightLogger.aspx</DependentUpon>
+    <Compile Include="about.aspx.cs">
+      <DependentUpon>about.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="FlightLogger.aspx.designer.cs">
-      <DependentUpon>FlightLogger.aspx</DependentUpon>
+    <Compile Include="about.aspx.designer.cs">
+      <DependentUpon>about.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="airports.aspx.cs">
+      <DependentUpon>airports.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="airports.aspx.designer.cs">
+      <DependentUpon>airports.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="dashboard.aspx.cs">
+      <DependentUpon>dashboard.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="dashboard.aspx.designer.cs">
+      <DependentUpon>dashboard.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="flightlogger.aspx.cs">
+      <DependentUpon>flightlogger.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="flightlogger.aspx.designer.cs">
+      <DependentUpon>flightlogger.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="flights.aspx.cs">
+      <DependentUpon>flights.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="flights.aspx.designer.cs">
+      <DependentUpon>flights.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="gallery.aspx.cs">
+      <DependentUpon>gallery.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="gallery.aspx.designer.cs">
+      <DependentUpon>gallery.aspx</DependentUpon>
     </Compile>
     <Compile Include="index.aspx.cs">
       <DependentUpon>index.aspx</DependentUpon>
@@ -107,6 +148,27 @@
     </Compile>
     <Compile Include="index.aspx.designer.cs">
       <DependentUpon>index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="login.aspx.cs">
+      <DependentUpon>login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="login.aspx.designer.cs">
+      <DependentUpon>login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="main.Master.cs">
+      <DependentUpon>main.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="main.Master.designer.cs">
+      <DependentUpon>main.Master</DependentUpon>
+    </Compile>
+    <Compile Include="signup.aspx.cs">
+      <DependentUpon>signup.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="signup.aspx.designer.cs">
+      <DependentUpon>signup.aspx</DependentUpon>
     </Compile>
     <Compile Include="unreachable.aspx.cs">
       <DependentUpon>unreachable.aspx</DependentUpon>
@@ -127,13 +189,6 @@
     <Compile Include="Sign_Up.aspx.designer.cs">
       <DependentUpon>Sign_Up.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Login.aspx.cs">
-      <DependentUpon>Login.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Login.aspx.designer.cs">
-      <DependentUpon>Login.aspx</DependentUpon>
-    </Compile>
     <Compile Include="myFlights.aspx.cs">
       <DependentUpon>myFlights.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -151,6 +206,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
+    <Content Include="main.Master" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

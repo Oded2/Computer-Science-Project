@@ -1,27 +1,7 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Sign_Up.aspx.cs"
-Inherits="Odedprojectpleasework.Sign_Up" %>
-
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Sign up</title>
-    <link rel="stylesheet" href="style.css" />
-    <script src="script.js"></script>
-  </head>
-
-  <body>
-    <div class="header">
-      <table>
-        <tr>
-          <td><a href="index.aspx">Home</a></td>
-          <td class="pageName">Sign Up</td>
-          <td><a href="Login.aspx">Log in</a></td>
-        </tr>
-      </table>
-    </div>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/main.Master" AutoEventWireup="true" CodeBehind="signup.aspx.cs" Inherits="Odedprojectpleasework.signup" %>
+<asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <form method="post" onsubmit="return validateSignupForm()">
       <div class="parent">
         <div class="main">
@@ -108,5 +88,4 @@ Inherits="Odedprojectpleasework.Sign_Up" %>
         </div>
       </div>
     </form>
-  </body>
-</html>
+</asp:Content>

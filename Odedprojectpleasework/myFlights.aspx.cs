@@ -33,6 +33,9 @@ namespace Odedprojectpleasework
             }
             else
             {
+                var dt = MyAdoHelper.ExecuteDataTable("Database1.mdf", "SELECT fname from Users where id=" + userID);
+                var fname = dt.Rows[0]["fname"].ToString();
+                username.InnerText = fname;
                 tdHeader3.InnerHtml = "<a href=\"logout.aspx\">Logout</a>";
             }
 

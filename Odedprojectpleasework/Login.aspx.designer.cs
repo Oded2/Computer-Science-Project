@@ -11,7 +11,7 @@ namespace Odedprojectpleasework
 {
 
 
-    public partial class Login
+    public partial class login
     {
     }
 }

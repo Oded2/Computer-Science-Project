@@ -25,7 +25,7 @@
       <h1>My Flights</h1>
     </div>
     <form id="form1" runat="server"></form>
-    <h2>Hello [user]!</h2>
+    <h2>Hello <span id="username" runat="server"></span></h2>
     <h3>Here are your flights</h3>
     <h2>Hits: <%=Application["hits"] %></h2>
     <div class="myFLmain">

@@ -13,13 +13,14 @@ namespace Odedprojectpleasework
         public String hits = "0";
         protected void Page_Load(object sender, EventArgs e)
         {
-            
-        
+
+
 
             if (Request.Form["submit"] == null)
             {
                 HttpCookie c = Request.Cookies["user_info"];
-                if (c == null) {
+                if (c == null)
+                {
                     return;
                 }
                 Session["user_id"] = c.Value;
@@ -46,8 +47,8 @@ namespace Odedprojectpleasework
                     Response.Cookies.Add(userCookie);
                     Response.Redirect("myFlights.aspx");
                 }
-                
-            } 
+
+            }
 
 
         }

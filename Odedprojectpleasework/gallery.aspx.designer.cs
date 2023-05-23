@@ -11,7 +11,7 @@ namespace Odedprojectpleasework
 {
 
 
-    public partial class index1
+    public partial class gallery
     {
     }
 }
