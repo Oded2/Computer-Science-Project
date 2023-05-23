@@ -81,7 +81,6 @@
     <Content Include="flightlogger.aspx" />
     <Content Include="flights.aspx" />
     <Content Include="gallery.aspx" />
-    <Content Include="Global.asax" />
     <Content Include="HtmlPage1.html" />
     <Content Include="Images\image1.jpeg" />
     <Content Include="Images\image2.jpeg" />
@@ -95,7 +94,6 @@
     <Content Include="style.css" />
     <Content Include="unreachable.aspx" />
     <Content Include="Web.config" />
-    <Content Include="Sign_Up.aspx" />
     <Content Include="myFlights.aspx" />
     <Content Include="logout.aspx" />
   </ItemGroup>
@@ -178,17 +176,7 @@
       <DependentUpon>unreachable.aspx</DependentUpon>
     </Compile>
     <Compile Include="App_Code\MyAdoHelperSql.cs" />
-    <Compile Include="Global.asax.cs">
-      <DependentUpon>Global.asax</DependentUpon>
-    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Sign_Up.aspx.cs">
-      <DependentUpon>Sign_Up.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Sign_Up.aspx.designer.cs">
-      <DependentUpon>Sign_Up.aspx</DependentUpon>
-    </Compile>
     <Compile Include="myFlights.aspx.cs">
       <DependentUpon>myFlights.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
