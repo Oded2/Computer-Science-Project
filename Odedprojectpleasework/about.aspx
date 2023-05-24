@@ -67,7 +67,7 @@ Inherits="Odedprojectpleasework.about" %>
       any questions, feedback, or inquiries you may have. Should you need to
       reach us, please feel free to contact our dedicated support team. You can
       reach us by sending an email to
-      <a href="mailto:support@aerologger.com">support@flightlogger.com</a>. We
+      <a href="mailto:support@aerologger.com">support@aerologger.com</a>. We
       strive to provide timely and helpful responses to ensure the best possible
       user experience. We also encourage you to connect with us on social media
       to stay updated on the latest news, features, and community events. Follow

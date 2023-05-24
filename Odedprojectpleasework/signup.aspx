@@ -76,7 +76,12 @@ Inherits="Odedprojectpleasework.signup" %>
             </td>
 
             <td colspan="2">
-              <input type="submit" id="submit" name="submit" />
+              <input
+                type="submit"
+                id="submit"
+                name="submit"
+                onclick="validateSignupForm()"
+              />
             </td>
           </tr>
           <tr>

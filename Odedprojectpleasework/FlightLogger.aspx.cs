@@ -11,6 +11,25 @@ namespace Odedprojectpleasework
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            if (Request.Form["submit"] == null)
+            {
+                return;
+            }
+            String date = Request.Form["logDate"];
+            String id = Request.Form["LogID"];
+            String takeoff = Request.Form["logTakeoff"];
+            String departure = Request.Form["logAirportTakeoff"];
+            String landing = Request.Form["logLanding"];
+            String destination = Request.Form["logAirportLanding"];
+            String type = Request.Form["logAirType"];
+            String model = Request.Form["logModel"];
+            String notes = Request.Form["logNotes"];
+
+            Response.Write(date);
+
+
+            Response.Write(id);
+
 
         }
     }

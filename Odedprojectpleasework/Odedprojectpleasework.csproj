@@ -92,7 +92,6 @@
     <Content Include="signup.aspx" />
     <Content Include="style.css" />
     <Content Include="Web.config" />
-    <Content Include="myFlights.aspx" />
     <Content Include="logout.aspx" />
   </ItemGroup>
   <ItemGroup>
@@ -168,13 +167,6 @@
     </Compile>
     <Compile Include="App_Code\MyAdoHelperSql.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="myFlights.aspx.cs">
-      <DependentUpon>myFlights.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="myFlights.aspx.designer.cs">
-      <DependentUpon>myFlights.aspx</DependentUpon>
-    </Compile>
     <Compile Include="logout.aspx.cs">
       <DependentUpon>logout.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>

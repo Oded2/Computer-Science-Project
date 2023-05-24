@@ -72,7 +72,7 @@ namespace Odedprojectpleasework
                             HttpCookie userCookie = new HttpCookie("user_info");
                             userCookie.Value = id;
                             Response.Cookies.Add(userCookie);
-                            Response.Redirect("myFlights.aspx");
+                            Response.Redirect("flights.aspx");
                         }
                     }
                 }

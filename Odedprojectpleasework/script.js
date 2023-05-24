@@ -32,26 +32,32 @@ function validateSignupForm(event) {
 }
 
 function validateText(name, val) {
-    if (!val || val.length == 0) {
-        alert(name + " cannot be empty");
-        return false;
-    }
-    if (val.indexOf("@") > 0) {
-        alert(name + " cannot contain a strudel");
-        return false;
-    }
-    if (val.indexOf("#") > 0) {
-        alert(name + " cannot contain a hashtag");
-        return false;
-    }
-    if (val.indexOf("%") > 0) {
-        alert(name + " cannot contain a percentage");
-        return false;
-    }
-    if (val.indexOf("*") > 0) {
-        alert(name + " cannot contain an asterisk");
-        return false;
-    }
+  if (!val || val.length == 0) {
+    alert(name + " cannot be empty");
+    return false;
+  }
+  if (val.indexOf("@") > 0) {
+    alert(name + " cannot contain a strudel");
+    return false;
+  }
+  if (val.indexOf("#") > 0) {
+    alert(name + " cannot contain a hashtag");
+    return false;
+  }
+  if (val.indexOf("%") > 0) {
+    alert(name + " cannot contain a percentage");
+    return false;
+  }
+  if (val.indexOf("*") > 0) {
+    alert(name + " cannot contain an asterisk");
+    return false;
+  }
 
   return true;
+}
+
+function maxDay() {
+  var currentDate = new Date();
+  var formattedDate = currentDate.toISOString().split("T")[0];
+  document.getElementById("logDate").max = formattedDate;
 }

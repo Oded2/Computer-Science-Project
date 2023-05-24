@@ -2,7 +2,7 @@
 AutoEventWireup="true" CodeBehind="index.aspx.cs"
 Inherits="Odedprojectpleasework.index1" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
-  <script src="script.js"></script>
+        <script src="script.js"></script>
 </asp:Content>
 <asp:Content
   ID="Content2"

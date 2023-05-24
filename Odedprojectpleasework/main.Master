@@ -8,6 +8,7 @@
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
     <link rel="stylesheet" href="style.css" />
+
 </head>
 <body>
     <div class="header">
@@ -20,7 +21,7 @@
                 <td><a href="airports.aspx">Airports</a></td>
                 <td><a href="gallery.aspx">Gallery</a></td>
                 <td><a href="about.aspx">About</a></td>
-                <td><a href="login.aspx">Login</a></td>
+                <td><a id="loginHref" runat="server" href="login.aspx">Login</a></td>
             </tr>
         </table>
     </div>

@@ -272,7 +272,6 @@ div.myFL {
 }
 
 div.myFLmain {
-  border: 5px dotted red;
   max-height: 60vh;
   width: 100vw;
   overflow: auto;
@@ -282,7 +281,6 @@ table.myFLmain {
   margin: auto;
   width: 100%;
   height: 100%;
-  border: 5px dotted aqua;
 }
 
 table.myFLmain tr td {
