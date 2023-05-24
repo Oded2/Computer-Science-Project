@@ -91,7 +91,6 @@
     <Content Include="script.js" />
     <Content Include="signup.aspx" />
     <Content Include="style.css" />
-    <Content Include="unreachable.aspx" />
     <Content Include="Web.config" />
     <Content Include="myFlights.aspx" />
     <Content Include="logout.aspx" />
@@ -166,13 +165,6 @@
     </Compile>
     <Compile Include="signup.aspx.designer.cs">
       <DependentUpon>signup.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="unreachable.aspx.cs">
-      <DependentUpon>unreachable.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="unreachable.aspx.designer.cs">
-      <DependentUpon>unreachable.aspx</DependentUpon>
     </Compile>
     <Compile Include="App_Code\MyAdoHelperSql.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
