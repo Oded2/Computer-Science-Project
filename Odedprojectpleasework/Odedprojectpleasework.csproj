@@ -81,7 +81,6 @@
     <Content Include="flightlogger.aspx" />
     <Content Include="flights.aspx" />
     <Content Include="gallery.aspx" />
-    <Content Include="HtmlPage1.html" />
     <Content Include="Images\image1.jpeg" />
     <Content Include="Images\image2.jpeg" />
     <Content Include="Images\image3.jpeg" />
