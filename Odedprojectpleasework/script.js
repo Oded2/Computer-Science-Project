@@ -86,3 +86,29 @@ function maxDay() {
   var formattedDate = currentDate.toISOString().split("T")[0];
   document.getElementById("logDate").max = formattedDate;
 }
+
+function validateFlightLog() {
+  let b = true;
+  b = b && validateText("Date", document.getElementById("logDate"));
+  b = b && validateText("Callsign", document.getElementById("callsign"));
+  b =
+    b &&
+    validateText("Time of Departure", document.getElementById("logTakeoff"));
+  b =
+    b &&
+    validateText(
+      "Airport of Departure",
+      document.getElementById("logAirportTakeoff")
+    );
+  b =
+    b && validateText("Time of Landing", document.getElementById("logLanding"));
+  b =
+    b &&
+    validateText(
+      "Airport of Destination",
+      document.getElementById("logAirportLanding")
+    );
+  b =
+    b && validateText("Model of Aircraft", document.getElementById("logModel"));
+  return b;
+}

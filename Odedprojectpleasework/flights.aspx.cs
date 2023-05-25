@@ -11,7 +11,12 @@ namespace Odedprojectpleasework
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            var userID = Session["user_id"];
+            if (userID == null)
+            {
+                Response.Redirect("unreachable.aspx");
+                return;
+            }
         }
     }
 }

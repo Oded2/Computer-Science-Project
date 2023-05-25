@@ -1,34 +1,33 @@
-﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="main.Master.cs" Inherits="Odedprojectpleasework.Site1" %>
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="main.Master.cs"
+Inherits="Odedprojectpleasework.Site1" %>
 
 <!DOCTYPE html>
 
 <html>
-<head runat="server">
+  <head runat="server">
     <title>AeroLogger</title>
-    <asp:ContentPlaceHolder ID="head" runat="server">
-    </asp:ContentPlaceHolder>
+    <link rel="shortcut icon" href="Images/airplane.png" type="image/jpg" />
+    <asp:ContentPlaceHolder ID="head" runat="server"> </asp:ContentPlaceHolder>
     <link rel="stylesheet" href="style.css" />
-
-</head>
-<body>
+  </head>
+  <body>
     <div class="header">
-        <table>
-            <tr>
-                <td><a href="index.aspx">Home</a></td>
-                <td><a href="dashboard.aspx">Dashboard</a></td>
-                <td><a href="flights.aspx">Logbook</a></td>
-                <td><a href="flightlogger.aspx">Log New Flight</a></td>
-                <td><a href="airports.aspx">Airports</a></td>
-                <td><a href="gallery.aspx">Gallery</a></td>
-                <td><a href="about.aspx">About</a></td>
-                <td><a id="loginHref" runat="server" href="login.aspx">Login</a></td>
-            </tr>
-        </table>
+      <table>
+        <tr>
+          <td><a href="index.aspx">Home</a></td>
+          <td><a href="dashboard.aspx">Dashboard</a></td>
+          <td><a href="flights.aspx">Logbook</a></td>
+          <td><a href="flightlogger.aspx">Log New Flight</a></td>
+          <td><a href="airports.aspx">Airports</a></td>
+          <td><a href="gallery.aspx">Gallery</a></td>
+          <td><a href="about.aspx">About</a></td>
+          <td><a id="loginHref" runat="server" href="login.aspx">Login</a></td>
+        </tr>
+      </table>
     </div>
-        <div>
-            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
-            </asp:ContentPlaceHolder>
-        </div>
-
-</body>
+    <div>
+      <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+      </asp:ContentPlaceHolder>
+    </div>
+  </body>
 </html>
