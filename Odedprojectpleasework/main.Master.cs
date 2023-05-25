@@ -9,7 +9,8 @@ namespace Odedprojectpleasework
 {
     public partial class Site1 : System.Web.UI.MasterPage
     {
-        String userID = null;
+
+        protected String userID { get; set; } = null;
         protected void Page_Load(object sender, EventArgs e)
         {
             if (Session["user_id"] != null) {

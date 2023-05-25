@@ -407,3 +407,26 @@ div.logButton button:active {
 div.main h1 {
   text-align: center;
 }
+
+div.unreachableParent {
+  margin: auto;
+  padding: 30px;
+}
+div.unreachableParent > h1 {
+  text-align: left;
+  font-size: 100px;
+}
+div.unreachableParent > h2 {
+  text-align: left;
+  font-size: 50px;
+}
+div.unreachableParent > img {
+  max-height: 60vh;
+}
+div.unreachableRedirect {
+  height: 40%;
+  min-height: 400px;
+  width: 40%;
+  float: right;
+  font-size: 50px;
+}

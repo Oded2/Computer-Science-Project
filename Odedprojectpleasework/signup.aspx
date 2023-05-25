@@ -2,6 +2,7 @@
 AutoEventWireup="true" CodeBehind="signup.aspx.cs"
 Inherits="Odedprojectpleasework.signup" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+  <script src="script.js"></script>
 </asp:Content>
 <asp:Content
   ID="Content2"
@@ -33,7 +34,13 @@ Inherits="Odedprojectpleasework.signup" %>
           <tr>
             <td>First name</td>
             <td>
-              <input type="text" id="fname" name="fname" maxlength="50" />
+              <input
+                type="text"
+                id="fname"
+                name="fname"
+                maxlength="50"
+                placeholder=""
+              />
             </td>
             <td>GPA</td>
             <td>
@@ -67,7 +74,7 @@ Inherits="Odedprojectpleasework.signup" %>
             </td>
             <td>Date of birth</td>
             <td>
-              <input type="date" name="dob" id="dob" />
+              <input type="date" name="dob" id="dob" min="1900-01-01" />
             </td>
           </tr>
           <tr>
@@ -76,12 +83,7 @@ Inherits="Odedprojectpleasework.signup" %>
             </td>
 
             <td colspan="2">
-              <input
-                type="submit"
-                id="submit"
-                name="submit"
-                onclick="validateSignupForm()"
-              />
+              <input type="submit" id="submit" name="submit" />
             </td>
           </tr>
           <tr>

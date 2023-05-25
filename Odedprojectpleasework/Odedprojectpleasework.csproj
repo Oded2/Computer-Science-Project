@@ -73,10 +73,6 @@
     <Content Include="App_Data\Database1_log.ldf">
       <DependentUpon>Database1.mdf</DependentUpon>
     </Content>
-    <Content Include="App_Data\app.mdf" />
-    <Content Include="App_Data\app_log.ldf">
-      <DependentUpon>app.mdf</DependentUpon>
-    </Content>
     <Content Include="dashboard.aspx" />
     <Content Include="flightlogger.aspx" />
     <Content Include="flights.aspx" />
@@ -91,6 +87,8 @@
     <Content Include="script.js" />
     <Content Include="signup.aspx" />
     <Content Include="style.css" />
+    <Content Include="unreachable.aspx" />
+    <Content Include="unreachableScript.js" />
     <Content Include="Web.config" />
     <Content Include="logout.aspx" />
   </ItemGroup>
@@ -173,6 +171,13 @@
     </Compile>
     <Compile Include="logout.aspx.designer.cs">
       <DependentUpon>logout.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="unreachable.aspx.cs">
+      <DependentUpon>unreachable.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="unreachable.aspx.designer.cs">
+      <DependentUpon>unreachable.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
