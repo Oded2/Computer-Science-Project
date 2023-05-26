@@ -1,33 +1,51 @@
-﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="main.Master.cs"
-Inherits="Odedprojectpleasework.Site1" %>
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="main.Master.cs" Inherits="Odedprojectpleasework.Site1" %>
+  <!DOCTYPE html <html lang="en">
 
-<!DOCTYPE html>
-
-<html>
   <head runat="server">
     <title>AeroLogger</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="shortcut icon" href="Images/airplane.png" type="image/jpg" />
-    <asp:ContentPlaceHolder ID="head" runat="server"> </asp:ContentPlaceHolder>
-    <link rel="stylesheet" href="style.css" />
+    <!--link rel="stylesheet" href="style.css" /-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+      integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <asp:ContentPlaceHolder ID="head" runat="server"></asp:ContentPlaceHolder>
   </head>
+
   <body>
-    <div class="header">
-      <table>
-        <tr>
-          <td><a href="index.aspx">Home</a></td>
-          <td><a href="dashboard.aspx">Dashboard</a></td>
-          <td><a href="flights.aspx">Logbook</a></td>
-          <td><a href="flightlogger.aspx">Log New Flight</a></td>
-          <td><a href="airports.aspx">Airports</a></td>
-          <td><a href="gallery.aspx">Gallery</a></td>
-          <td><a href="about.aspx">About</a></td>
-          <td><a id="loginHref" runat="server" href="login.aspx">Login</a></td>
-        </tr>
-      </table>
-    </div>
+    <header class="p-3 text-bg-dark">
+      <div class="container">
+        <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+          <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
+            <svg class="bi me-2" width="40" height="32" role="img" aria-label="Bootstrap"><use xlink:href="#bootstrap"/></svg>
+          </a>
+  
+          <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+            <li><a href="index.aspx" class="nav-link px-2 text-white">Home</a></li>
+            <li><a href="dashboard.aspx" class="nav-link px-2 text-white">Dashboard</a></li>
+            <li><a href="flights.aspx" class="nav-link px-2 text-white">Logbook</a></li>
+            <li><a href="flightlogger.aspx" class="nav-link px-2 text-white">Log New Flight</a></li>
+            <li><a href="airports.aspx" class="nav-link px-2 text-white">Airports</a></li>
+            <li><a href="gallery.aspx" class="nav-link px-2 text-white">Gallery</a></li>
+            <li><a href="about.aspx" class="nav-link px-2 text-white">About</a></li>
+          </ul>
+  
+          
+  
+          <div class="text-end">
+            <a class="nav-link px-2 text-white" id="loginHref" href=""  runat="server"></a>
+          </div>
+        </div>
+      </div>
+    </header>
+  
     <div>
       <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
       </asp:ContentPlaceHolder>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+      crossorigin="anonymous"></script>
   </body>
-</html>
+
+  </html>

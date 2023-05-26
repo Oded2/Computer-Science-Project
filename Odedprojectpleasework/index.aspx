@@ -2,6 +2,7 @@
 AutoEventWireup="true" CodeBehind="index.aspx.cs"
 Inherits="Odedprojectpleasework.index1" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+    <link rel="stylesheet" href="style.css">
         <script src="script.js"></script>
 </asp:Content>
 <asp:Content
