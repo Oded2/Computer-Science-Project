@@ -44,9 +44,9 @@ namespace Odedprojectpleasework
             String date = Request.Form["logDate"];
             String callsign = Request.Form["callsign"];
             String takeoff = Request.Form["logTakeoff"];
-            String departure = Request.Form["logAirportTakeoff"];
+            String departure = this.logAirportTakeoff.Value;
             String landing = Request.Form["logLanding"];
-            String destination = Request.Form["logAirportLanding"];
+            String destination = this.logAirportLanding.Value;
             String airType = Request.Form["logAirType"];
             String model = Request.Form["logModel"];
             String notes = Request.Form["logNotes"];
@@ -66,6 +66,7 @@ namespace Odedprojectpleasework
             String sql = sb.ToString();
             int rowsAffected = MyAdoHelper.DoQuery("Database1.mdf", sql);
             Response.Redirect("flights.aspx");
+
 
 
 

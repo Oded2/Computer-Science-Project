@@ -44,7 +44,7 @@ div {
 .airportDesc {
   font-size: smaller;
   height: 65%;
-  overflow-y: scroll;
+  overflow-y: auto;
   overflow-x: hidden;
 }
 .airportUsed {

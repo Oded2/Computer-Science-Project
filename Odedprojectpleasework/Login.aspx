@@ -11,7 +11,7 @@
             <th>
               ID:
             </th>
-            <td><input type="text" name="id" id="id" maxlength="10"></td>
+            <td><input type="text" name="id" id="id" maxlength="10" placeholder="ID"></td>
           </tr>
           <tr>
             <th>

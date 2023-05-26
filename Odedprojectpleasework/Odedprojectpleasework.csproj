@@ -75,6 +75,7 @@
     </Content>
     <Content Include="dashboard.aspx" />
     <Content Include="flightlogger.aspx" />
+    <Content Include="flightlogger.js" />
     <Content Include="flights.aspx" />
     <Content Include="gallery.aspx" />
     <Content Include="Images\airplane.png" />

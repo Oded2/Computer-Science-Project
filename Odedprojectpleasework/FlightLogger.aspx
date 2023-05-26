@@ -25,7 +25,7 @@ Inherits="Odedprojectpleasework.flightlogger" %>
                 min="1900-01-01"
                 max=""
                 onclick="maxDay()"
-                value="2022-05-01"
+                value=""
               />
             </td>
             <td>Aircraft callsign</td>
