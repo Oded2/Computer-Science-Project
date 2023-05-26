@@ -1,50 +1,57 @@
 ﻿.flex-container {
-    margin: auto;
-    display: flex;
-    background-color: DodgerBlue;
-    max-width: 70em;
-    flex-wrap: wrap;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  background-color: DodgerBlue;
+  max-width: 80%;
+  flex-wrap: wrap;
 }
-
-    .flex-container > div {
-        background-color: #f1f1f1;
-        width: 20em;
-        margin: 10px;
-        padding: 20px;
-        height: 10em;
-        overflow: auto;
-
-    }
+div {
+  max-width: 100%;
+}
+.flex-container > div {
+  position: relative;
+  background-color: #f1f1f1;
+  width: 22em;
+  margin: 10px;
+  padding: 20px;
+  height: 14em;
+  overflow: hidden;
+}
 
 .nameWrapper {
-    height: 1.5em;
-    width: 100%;
-    border-bottom: 1px black dotted;
-    margin-bottom: 2px;
+  height: 1.5em;
+  width: 100%;
+  border-bottom: 1px black dotted;
+  margin-bottom: 2px;
 }
 .airportName {
-    font-weight: bold;
-    text-transform: uppercase;
-    float: left;
+  font-weight: bold;
+  text-transform: uppercase;
+  float: left;
 }
 
 .airportCode {
-    font-weight: bold;
-    color: blue;
-    background-color: yellow;
-    float: right;
+  font-weight: bold;
+  color: blue;
+  background-color: yellow;
+  float: right;
 }
 
 .airportLoc {
-    margin-bottom: 5px;
+  margin-bottom: 5px;
 }
 .airportDesc {
-    font-size: smaller;
+  font-size: smaller;
+  height: 65%;
+  overflow-y: scroll;
+  overflow-x: hidden;
 }
-.airportUsed{ 
-    margin-top: 5px;
-    width: 100%;
-    text-align: center;
-    font-weight: bold;
-    font-size: small;
+.airportUsed {
+  position: absolute;
+  bottom: 5px;
+  width: 100%;
+  text-align: center;
+  font-weight: bold;
+  font-size: small;
 }

@@ -3,101 +3,362 @@
 		<name>Ben Gurion Airport</name>
 		<code>LLBG</code>
 		<location>Tel Aviv</location>
-		<description>Ben Gurion Airport, located in Tel Aviv, is the main international airport in Israel. It serves as a major hub for both domestic and international flights, offering a wide range of passenger and cargo services.</description>
-		<coordinates>
-			<latitude>32.0019</latitude>
-			<longitude>34.8854</longitude>
-		</coordinates>
-	</airport>
-	<airport>
-		<name>Eilat Airport</name>
-		<code>LLET</code>
-		<location>Eilat</location>
-		<description>Eilat Airport, located in the resort city of Eilat, serves as a gateway for tourists visiting the southernmost part of Israel. It offers domestic and limited international flights, connecting visitors to popular destinations in the region.</description>
-		<coordinates>
-			<latitude>29.7258</latitude>
-			<longitude>35.0060</longitude>
-		</coordinates>
-	</airport>
-	<airport>
-		<name>Ovda Airport</name>
-		<code>LLOV</code>
-		<location>Eilat</location>
-		<description>Ovda Airport, located in Eilat, is primarily used for domestic flights. It serves as an alternative airport for the region, particularly during peak tourist seasons.</description>
-		<coordinates>
-			<latitude>29.9402</latitude>
-			<longitude>34.9358</longitude>
-		</coordinates>
+		<description>Ben Gurion Airport, located in Tel Aviv, is the main international airport in
+			Israel. It serves as a major hub for both domestic and international flights, offering a
+			wide range of passenger and cargo services.</description>
 	</airport>
 	<airport>
 		<name>Haifa Airport</name>
 		<code>LLHA</code>
 		<location>Haifa</location>
-		<description>Haifa Airport, situated in Haifa, provides domestic flight services. It offers convenient access to the northern region of Israel.</description>
-		<coordinates>
-			<latitude>32.8094</latitude>
-			<longitude>35.0433</longitude>
-		</coordinates>
+		<description>Haifa Airport in Israel is a modern transportation hub with top-notch
+			facilities and a well-connected infrastructure, serving domestic and international
+			travelers. It offers convenient access to Haifa city, coastal areas, tourist
+			attractions, and business centers, providing a pleasant journey that meets international
+			safety standards.</description>
 	</airport>
 	<airport>
-		<name>Rosh Pina Airport</name>
-		<code>LLIB</code>
-		<location>Rosh Pina</location>
-		<description>Rosh Pina Airport, located in Rosh Pina, is a small airport serving general aviation and private flights in the northern region of Israel.</description>
-		<coordinates>
-			<latitude>32.9780</latitude>
-			<longitude>35.5711</longitude>
-		</coordinates>
+		<name>Eilat Airport</name>
+		<code>LLET</code>
+		<location>Eilat</location>
+		<description>Eilat Airport is a regional airport located in the southern city of Eilat,
+			Israel. It serves as a gateway to the popular resort destination, offering convenient
+			access to pristine beaches, vibrant nightlife, and outdoor activities. With modern
+			facilities and efficient services, Eilat Airport ensures a pleasant travel experience
+			for visitors exploring the enchanting attractions of the region.</description>
 	</airport>
+
 	<airport>
-		<name>Ein Yahav Airport</name>
-		<code>LLEY</code>
-		<location>Ein Yahav</location>
-		<description>Ein Yahav Airport, situated in Ein Yahav, provides essential air services for the southern region of Israel.</description>
-		<coordinates>
-			<latitude>30.6206</latitude>
-			<longitude>35.2033</longitude>
-		</coordinates>
-	</airport>
-	<airport>
-		<name>Rimon Airport</name>
-		<code>MIP</code>
-		<location>Mitzpe Ramon</location>
-		<description>Rimon Airport, located in Mitzpe Ramon, serves as a regional airport catering to the needs of the Negev region. It offers facilities for general aviation and recreational flying.</description>
-		<coordinates>
-			<latitude>30.6092</latitude>
-			<longitude>34.7761</longitude>
-		</coordinates>
-	</airport>
-	<airport>
-		<name>Bar Yehuda Airport</name>
-		<code>MTZ</code>
-		<location>Masada</location>
-		<description>Bar Yehuda Airport, situated near Masada, provides access to the southern region of Israel. It primarily serves as a base for scenic flights and aviation-related tourism activities.</description>
-		<coordinates>
-			<latitude>31.3286</latitude>
-			<longitude>35.3886</longitude>
-		</coordinates>
-	</airport>
-	<airport>
-		<name>Megiddo Airport</name>
-		<code>LLMG</code>
-		<location>Megiddo</location>
-		<description>Megiddo Airport, located near the ancient city of Megiddo, offers facilities for recreational flying and private aviation. It serves the northern region of Israel.</description>
-		<coordinates>
-			<latitude>32.6008</latitude>
-			<longitude>35.2289</longitude>
-		</coordinates>
+		<name>Ramon Airport</name>
+		<code>LLER</code>
+		<location>Eilat</location>
+		<description>Ramon Airport, located near the city of Eilat in southern Israel, is a modern
+			transportation hub for domestic and international travelers. Surrounded by breathtaking
+			desert landscapes, it offers advanced facilities and comprehensive infrastructure,
+			providing easy access to the vibrant city of Eilat, coastal areas, tourist attractions,
+			recreational activities, and business centers. With a commitment to customer
+			satisfaction and international safety standards, Ramon Airport ensures a pleasant and
+			convenient journey for all passengers, enhancing the overall travel experience in the
+			region.</description>
 	</airport>
 	<airport>
 		<name>Herzliya Airport</name>
 		<code>LLHZ</code>
 		<location>Herzliya</location>
-		<description>Herzliya Airport, situated in Herzliya, is a general aviation airport that serves as a popular destination for private flights and flight training. It is located near the Mediterranean coast.</description>
-		<coordinates>
-			<latitude>32.1669</latitude>
-			<longitude>34.8211</longitude>
-		</coordinates>
+		<description>Herzliya Airport, conveniently located in the beautiful city of Herzliya,
+			Israel, serves as a modern and efficient transportation hub for both domestic and
+			international travelers. Situated near the picturesque Mediterranean coastline, the
+			airport offers a seamless and convenient travel experience, featuring state-of-the-art
+			facilities and a well-connected infrastructure. With a variety of airlines and
+			destinations, Herzliya Airport acts as a gateway to the captivating city of Herzliya and
+			its surrounding areas, providing easy access to popular tourist attractions, luxurious
+			resorts, and thriving business centers. Committed to ensuring customer satisfaction and
+			upholding international safety standards, Herzliya Airport guarantees a pleasant and
+			hassle-free journey for all passengers, contributing to an exceptional travel experience
+			in the region.</description>
 	</airport>
-</airports>
+	<airport>
+		<name>Rosh Pina Airport</name>
+		<code>LLIB</code>
+		<location>Rosh Pina</location>
+		<description>Rosh Pina Airport, situated in the serene town of Rosh Pina in northern Israel,
+			is a quaint yet efficient transportation hub catering to domestic and international
+			travelers. Surrounded by picturesque landscapes and nestled in the Galilee region, the
+			airport offers a seamless and enjoyable travel experience with its modern facilities and
+			well-maintained infrastructure. Despite its smaller size, Rosh Pina Airport provides
+			convenient access to various airlines and destinations, acting as a gateway to the
+			charming town of Rosh Pina and the nearby attractions such as the Sea of Galilee and the
+			Golan Heights. Committed to passenger satisfaction and adhering to stringent safety
+			protocols, Rosh Pina Airport ensures a pleasant and hassle-free journey, contributing to
+			the overall travel experience in the region.</description>
+	</airport>
+	<airport>
+		<name>Arad Airfield</name>
+		<code>LLAR</code>
+		<location>Arad</location>
+		<description>Arad Airfield, located in the city of Arad in southern Israel, is a small yet
+			vital aviation facility catering to various aviation needs. With its strategic location
+			in the Negev Desert, the airfield serves as an important hub for private and
+			recreational aviation activities. While not designated as an international airport, Arad
+			Airfield offers essential services and facilities for general aviation enthusiasts,
+			including flight training, aerial tours, and aerial sports. The airfield's serene
+			surroundings and unique desert landscape provide an ideal backdrop for flying
+			experiences. Committed to safety and serving the local aviation community, Arad Airfield
+			contributes to the overall aviation experience in the region, making it a popular
+			destination for flying enthusiasts and pilots.</description>
+	</airport>
+	<airport>
+		<name>Bar Yehuda Airfield</name>
+		<code>LLMZ</code>
+		<location>Masada</location>
+		<description>Bar Yehuda Airfield, located near the historic site of Masada in southern
+			Israel, is a small but important airfield catering to various aviation needs. Situated
+			in the breathtaking Judean Desert, the airfield offers a unique and scenic flying
+			experience. While not classified as an international airport, Bar Yehuda Airfield
+			provides essential services and facilities for general aviation, including private
+			flights, aerial tours, and skydiving operations. The airfield's proximity to the iconic
+			Masada fortress and the stunning Dead Sea region makes it a popular destination for
+			tourists seeking aerial views of these historical and natural wonders. Committed to
+			safety and supporting aviation activities in the area, Bar Yehuda Airfield contributes
+			to the overall aviation experience, providing unforgettable flying adventures in a truly
+			remarkable setting.</description>
+	</airport>
+	<airport>
+		<name>Be'er Sheva Teyman Airfield</name>
+		<code>LLBS</code>
+		<location>Be'er Sheva</location>
+		<description>Be'er Sheva Teyman Airfield, located in the city of Be'er Sheva in southern
+			Israel, is a regional airfield serving various aviation needs. Situated in the heart of
+			the Negev Desert, the airfield offers a unique flying experience with its vast open
+			spaces and stunning desert landscapes. While not classified as an international airport,
+			Be'er Sheva Teyman Airfield provides essential services for general aviation, including
+			flight training, aerial photography, and private flights. The airfield's strategic
+			location in Be'er Sheva makes it a convenient choice for local aviation enthusiasts and
+			small aircraft operators in the region. Committed to safety and supporting the local
+			aviation community, Be'er Sheva Teyman Airfield contributes to the overall aviation
+			experience, providing a gateway to exploring the beauty of the Negev Desert from the
+			skies.</description>
+	</airport>
+	<airport>
+		<name>Ein Shemer Airfield</name>
+		<code>LLES</code>
+		<location>Ein Shemer</location>
+		<description>Ein Shemer Airfield, situated in the town of Ein Shemer in northern Israel, is
+			a regional airfield catering to various aviation needs. Nestled amidst the picturesque
+			landscapes of the Jezreel Valley, the airfield offers a scenic and pleasant flying
+			experience. While not classified as an international airport, Ein Shemer Airfield
+			provides essential services for general aviation, including flight training, private
+			flights, and recreational flying. The airfield's strategic location in the heart of
+			agricultural and rural areas makes it an ideal base for aerial activities and
+			sightseeing tours over the lush countryside. Committed to safety and supporting the
+			local aviation community, Ein Shemer Airfield contributes to the overall aviation
+			experience, providing an opportunity to explore the beauty of northern Israel from the
+			skies.</description>
+	</airport>
+	<airport>
+		<name>Ein Vered Airfield</name>
+		<code>LLEV</code>
+		<location>Ein Vered</location>
+		<description>Ein Vered Airfield, located in the village of Ein Vered in central Israel, is a
+			regional airfield serving various aviation needs. Surrounded by beautiful rural
+			landscapes, the airfield offers a serene and inviting flying experience. While not
+			classified as an international airport, Ein Vered Airfield provides essential services
+			for general aviation, including flight training, private flights, and recreational
+			flying. The airfield's convenient location in central Israel makes it a convenient
+			choice for local aviation enthusiasts and small aircraft operators. With its commitment
+			to safety and supporting the local aviation community, Ein Vered Airfield contributes to
+			the overall aviation experience, providing a gateway to exploring the charm of the
+			Israeli countryside from the skies.</description>
+	</airport>
+	<airport>
+		<name>Ein Yahav-Sapir Airfield</name>
+		<code>LLEY</code>
+		<location>Ein Yahav-Sapir</location>
+		<description>Ein Yahav-Sapir Airfield, situated in the community of Ein Yahav-Sapir in
+			southern Israel, is a regional airfield catering to various aviation needs. Surrounded
+			by the breathtaking landscapes of the Arava Valley, the airfield offers a unique and
+			picturesque flying experience. While not classified as an international airport, Ein
+			Yahav-Sapir Airfield provides essential services for general aviation, including flight
+			training, private flights, and recreational flying. The airfield's strategic location
+			near the Arava region, known for its desert beauty and nature reserves, makes it an
+			ideal base for aviation activities and aerial exploration of the area. Committed to
+			safety and supporting the local aviation community, Ein Yahav-Sapir Airfield contributes
+			to the overall aviation experience, providing a gateway to discover the stunning
+			landscapes of southern Israel from the skies.</description>
 
+
+	</airport>
+	<airport>
+		<name>Fik Airfield</name>
+		<code>LLFK</code>
+		<location>Fik</location>
+		<description>Fik Airfield, located in the village of Fik in northern Israel, is a small
+			regional airfield serving various aviation needs. Nestled amidst the beautiful
+			landscapes of the Upper Galilee region, the airfield offers a scenic and tranquil flying
+			experience. While not classified as an international airport, Fik Airfield provides
+			essential services for general aviation, including flight training, private flights, and
+			recreational flying. The airfield's convenient location in the Galilee makes it a
+			preferred choice for local aviation enthusiasts and small aircraft operators. With its
+			commitment to safety and supporting the local aviation community, Fik Airfield
+			contributes to the overall aviation experience, providing an opportunity to explore the
+			charm of northern Israel from the skies.</description>
+	</airport>
+	<airport>
+		<name>Habonim Airfield</name>
+		<code>LLBO</code>
+		<location>Habonim</location>
+		<description>Habonim Airfield, situated in the community of Habonim in western Israel, is a
+			regional airfield catering to various aviation needs. Located near the stunning
+			Mediterranean coastline, the airfield offers a picturesque and enjoyable flying
+			experience. While not classified as an international airport, Habonim Airfield provides
+			essential services for general aviation, including flight training, private flights, and
+			recreational flying. The airfield's proximity to the Mediterranean Sea and the beautiful
+			beaches makes it a desirable destination for aviation enthusiasts and pilots looking to
+			enjoy coastal flying. Committed to safety and supporting the local aviation community,
+			Habonim Airfield contributes to the overall aviation experience, providing an
+			opportunity to explore the scenic wonders of western Israel from the skies.</description>
+	</airport>
+	<airport>
+		<name>Kiryat Shmona Airport</name>
+		<code>LLKS</code>
+		<location>Kiryat Shmona</location>
+		<description>Kiryat Shmona Airport, located in the city of Kiryat Shmona in northern Israel,
+			is a regional airport serving both domestic and limited international flights. Nestled
+			amidst the scenic landscapes of the Upper Galilee region, the airport offers a
+			convenient and efficient travel experience. With its well-maintained facilities and
+			infrastructure, Kiryat Shmona Airport provides essential services for passenger flights,
+			cargo operations, and general aviation. Serving as a gateway to the picturesque Galilee
+			region, the airport offers access to popular tourist destinations, hiking trails, and
+			historical sites. Committed to safety and customer satisfaction, Kiryat Shmona Airport
+			ensures a pleasant and hassle-free journey, contributing to the overall travel
+			experience in northern Israel.</description>
+	</airport>
+	<airport>
+		<name>Megiddo Airfield</name>
+		<code>LLMG</code>
+		<location>Megiddo</location>
+		<description>Megiddo Airfield, located near the historic site of Megiddo in northern Israel,
+			is a small regional airfield catering to various aviation needs. Surrounded by the
+			scenic landscapes of the Jezreel Valley, the airfield offers a pleasant and convenient
+			flying experience. While not classified as an international airport, Megiddo Airfield
+			provides essential services for general aviation, including flight training, private
+			flights, and recreational flying. The airfield's strategic location near Megiddo, known
+			for its archaeological significance and natural beauty, makes it an ideal base for
+			aviation activities and aerial exploration of the region. Committed to safety and
+			supporting the local aviation community, Megiddo Airfield contributes to the overall
+			aviation experience, providing an opportunity to discover the historical and natural
+			wonders of northern Israel from the skies.</description>
+	</airport>
+	<airport>
+		<name>Mitzpe Ramon Airfield</name>
+		<code>LLMR</code>
+		<location>Mitzpe Ramon</location>
+		<description>Mitzpe Ramon Airfield, located in the town of Mitzpe Ramon in southern Israel,
+			is a small regional airfield catering to various aviation needs. Situated near the
+			majestic Ramon Crater, the airfield offers a unique and awe-inspiring flying experience.
+			While not classified as an international airport, Mitzpe Ramon Airfield provides
+			essential services for general aviation, including flight training, private flights, and
+			recreational flying. The airfield's proximity to the Ramon Crater, a geological wonder
+			and popular tourist attraction, makes it an ideal base for aviation enthusiasts and
+			pilots looking to explore the breathtaking desert landscapes from above. Committed to
+			safety and supporting the local aviation community, Mitzpe Ramon Airfield contributes to
+			the overall aviation experience, providing an opportunity to witness the natural beauty
+			of southern Israel from the skies.</description>
+	</airport>
+	<airport>
+		<name>Rishon LeZion Airfield</name>
+		<code>LLRS</code>
+		<location>Rishon LeZion</location>
+		<description>Rishon LeZion Airfield, located in the city of Rishon LeZion in central Israel,
+			is a regional airfield serving various aviation needs. Situated near the bustling
+			metropolitan area of Tel Aviv, the airfield offers convenient access to urban and
+			suburban destinations. While not classified as an international airport, Rishon LeZion
+			Airfield provides essential services for general aviation, including flight training,
+			private flights, and recreational flying. The airfield's strategic location near Tel
+			Aviv, a major economic and cultural hub, makes it an ideal choice for local aviation
+			enthusiasts and small aircraft operators. With its commitment to safety and supporting
+			the local aviation community, Rishon LeZion Airfield contributes to the overall aviation
+			experience, providing a gateway to explore the dynamic and vibrant region of central
+			Israel from the skies.</description>
+	</airport>
+	<airport>
+		<name>Tnuvot Airfield</name>
+		<code>LLTN</code>
+		<location>Tnuvot</location>
+		<description>Tnuvot Airfield is a regional airfield located in the town of Tnuvot in
+			southern Israel. Serving general aviation needs, it offers flight training, private
+			flights, and recreational flying. Situated in a scenic area, Tnuvot Airfield provides a
+			pleasant flying experience in the southern region of the country.</description>
+	</airport>
+	<airport>
+		<name>Yotvata Airfield</name>
+		<code>LLYO</code>
+		<location>Yotvata</location>
+		<description>Yotvata Airfield, located in the community of Yotvata in southern Israel, is a
+			regional airfield catering to general aviation needs. Offering flight training, private
+			flights, and recreational flying, it provides a convenient and accessible option for
+			aviation enthusiasts. Situated in a picturesque desert setting, Yotvata Airfield offers
+			a unique flying experience amidst the stunning landscapes of southern Israel.</description>
+	</airport>
+	<airport>
+		<name>Hatzerim Airbase</name>
+		<code>LLHB</code>
+		<location>Hatzerim</location>
+		<description>Hatzerim Airbase, with the ICAO code LLHB, is a military airbase located in
+			Hatzerim, southern Israel. Serving as the main base for the Israeli Air Force, it plays
+			a vital role in national defense and security. Equipped with advanced facilities and
+			infrastructure, Hatzerim Airbase supports various military aircraft operations, training
+			exercises, and defense missions, ensuring the readiness and capabilities of the Israeli
+			Air Force.</description>
+	</airport>
+	<airport>
+		<name>Hatzor Airbase</name>
+		<code>LLHS</code>
+		<location>Hatzor</location>
+		<description>Hatzor Airbase, with the ICAO code LLHS, is a significant military airbase
+			located in Hatzor, central Israel. As a key operational base for the Israeli Air Force,
+			it plays a crucial role in national defense and security. Equipped with advanced
+			facilities and infrastructure, Hatzor Airbase supports a wide range of military aircraft
+			operations, including training, tactical missions, and strategic deployments, ensuring
+			the readiness and capabilities of the Israeli Air Force in safeguarding the nation.</description>
+	</airport>
+	<airport>
+		<name>Nevatim Airbase</name>
+		<code>LLNV</code>
+		<location>Nevatim</location>
+		<description>Nevatim Airbase, with the ICAO code LLNV, is a major military airbase located
+			in Nevatim, southern Israel. Serving as a key operational base for the Israeli Air
+			Force, it plays a vital role in national defense and security. Equipped with
+			state-of-the-art facilities and infrastructure, Nevatim Airbase supports various
+			military aircraft operations, including training, combat missions, and strategic
+			deployments, contributing to the defense capabilities of the Israeli Air Force and
+			ensuring the protection of the nation.</description>
+	</airport>
+	<airport>
+		<name>Ramat David Airbase</name>
+		<code>LLRD</code>
+		<location>Ramat David</location>
+		<description>Ramat David Airbase, located in the town of Ramat David, is a significant
+			military airbase in northern Israel. It serves as a crucial operational base for the
+			Israeli Air Force, supporting various missions and training exercises. Equipped with
+			advanced facilities and infrastructure, Ramat David Airbase plays a vital role in
+			national defense and security, ensuring the readiness and capabilities of the Israeli
+			Air Force in safeguarding the country.</description>
+	</airport>
+	<airport>
+		<name>Ramon Airbase</name>
+		<code>LLRM</code>
+		<location>Ramon</location>
+		<description>Ramon Airbase, located in Ramon, southern Israel, is a major military airbase.
+			Serving as a key operational hub for the Israeli Air Force, it plays a critical role in
+			national defense and security. Equipped with state-of-the-art facilities and
+			infrastructure, Ramon Airbase supports various military aircraft operations, including
+			training, combat missions, and strategic deployments, ensuring the readiness and
+			capabilities of the Israeli Air Force in protecting the country.</description>
+	</airport>
+	<airport>
+		<name>Tel Nof Airbase</name>
+		<code>LLEK</code>
+		<location>Tel Nof</location>
+		<description>Tel Nof Airbase, with the ICAO code LLEK, is a major military airbase located
+			in Tel Nof, central Israel. Serving as a critical operational base for the Israeli Air
+			Force, it plays a pivotal role in national defense and security. Equipped with advanced
+			facilities and infrastructure, Tel Nof Airbase supports various military aircraft
+			operations, including training, combat missions, and strategic deployments, ensuring the
+			readiness and capabilities of the Israeli Air Force in safeguarding the nation.</description>
+	</airport>
+	<airport>
+		<name>Uvda Airport</name>
+		<code>LLOV</code>
+		<location>Uvda</location>
+		<description>Uvda Airport, with the ICAO code LLOV, is a regional airport located in Uvda,
+			southern Israel. It serves as a gateway to the popular tourist destination of Eilat and
+			the surrounding area. With its modern facilities and convenient access to the Red Sea
+			resort city, Uvda Airport provides domestic and international travelers with a seamless
+			travel experience. Whether for leisure or business, the airport offers a range of
+			services and connections to accommodate the needs of passengers visiting the beautiful
+			southern region of Israel.</description>
+	</airport>
+
+
+</airports>

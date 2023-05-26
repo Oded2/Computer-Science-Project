@@ -5,6 +5,7 @@ using System.Text;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using System.Xml;
 
 namespace Odedprojectpleasework
 {
@@ -12,6 +13,22 @@ namespace Odedprojectpleasework
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            if (!IsPostBack)
+            {
+                var fileLocation = Server.MapPath("~/App_Data/airports.xml");
+                var doc = new XmlDocument();
+                doc.Load(fileLocation);
+                foreach (XmlNode node in doc.DocumentElement)
+                {
+                    var code = node.SelectSingleNode("code").InnerText;
+                    var name = node.SelectSingleNode("name").InnerText;
+                    ListItem item = new ListItem(name, code);
+                    this.logAirportTakeoff.Items.Add(item);
+                    this.logAirportLanding.Items.Add(item);
+                }
+
+            }
+
             var userID = Session["user_id"];
             if(userID == null)
             {

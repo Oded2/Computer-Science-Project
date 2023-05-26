@@ -73,7 +73,6 @@
     <Content Include="App_Data\Database1_log.ldf">
       <DependentUpon>Database1.mdf</DependentUpon>
     </Content>
-    <Content Include="Bootstrap\bootstrap1.css" />
     <Content Include="dashboard.aspx" />
     <Content Include="flightlogger.aspx" />
     <Content Include="flights.aspx" />

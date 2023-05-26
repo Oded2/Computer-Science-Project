@@ -4,6 +4,7 @@ Inherits="Odedprojectpleasework.flightlogger" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
   <script src="script.js"></script>
+  <script src="flightlogger.js"></script>
 </asp:Content>
 <asp:Content
   ID="Content2"
@@ -24,11 +25,12 @@ Inherits="Odedprojectpleasework.flightlogger" %>
                 min="1900-01-01"
                 max=""
                 onclick="maxDay()"
+                value="2022-05-01"
               />
             </td>
             <td>Aircraft callsign</td>
             <td>
-              <input type="text" name="callsign" id="callsign" />
+              <input type="text" name="callsign" id="callsign" maxlength="7" />
             </td>
           </tr>
           <tr>
@@ -38,25 +40,25 @@ Inherits="Odedprojectpleasework.flightlogger" %>
             </td>
             <td>Airport of Departure</td>
             <td>
-              <input
-                type="text"
+              <select
+                runat="server"
                 name="logAirportTakeoff"
                 id="logAirportTakeoff"
-              />
+              ></select>
             </td>
           </tr>
           <tr>
             <td>Time of Landing</td>
             <td>
-              <input type="time" name="logLanding" id="logLanding" />
+              <input type="time" name="logLanding" id="logLanding" value="" />
             </td>
             <td>Airport of Destination</td>
             <td>
-              <input
-                type="text"
+              <select
+                runat="server"
                 name="logAirportLanding"
                 id="logAirportLanding"
-              />
+              ></select>
             </td>
           </tr>
           <tr>
@@ -74,7 +76,7 @@ Inherits="Odedprojectpleasework.flightlogger" %>
             </td>
             <td>Model of Aircraft</td>
             <td>
-              <input type="text" name="logModel" id="logModel" />
+              <input type="text" name="logModel" id="logModel" maxlength="50" />
             </td>
           </tr>
           <tr>
