@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   font-family: "Quicksand", sans-serif;
+  font-size: large;
 }
 
 :root {
@@ -25,17 +26,16 @@ body {
   min-height: 60px;
   height: 5vh;
   width: 100vw;
-  max-width: 100%;
+  display: table;
+  overflow: hidden;
+  margin-bottom: 20px;
 }
-
-.header table {
-  table-layout: fixed;
-  width: 100%;
-  height: 100%;
-}
-
-.header table td {
+.header div {
+  width: 20em;
+  vertical-align: middle;
+  display: table-cell;
   text-align: center;
+  vertical-align: middle;
   font-size: large;
 }
 
@@ -45,6 +45,24 @@ body {
 
 .header a:hover {
   color: lightgray;
+}
+
+.Wrapper {
+  margin: auto;
+  max-width: 50%;
+}
+.Left {
+  width: 60%;
+  float: left;
+}
+.Right {
+  width: 40%;
+  float: right;
+  overflow: hidden;
+}
+
+p {
+  margin-bottom: 1em;
 }
 
 input:focus {
@@ -71,7 +89,7 @@ div.parent > h1 {
 div.main {
   display: flex;
   width: 100%;
-  height: 100%;
+  /* height: 100%; */
 }
 
 .content {
@@ -85,14 +103,24 @@ div.main {
 .content tr {
   background-color: white;
   border: 1px solid black;
+  height: 30px;
+}
+
+.content th {
+  text-align: center;
+  width: 200px;
+  background-color: lightblue;
+
 }
 
 .content td {
+  padding-bottom: 12px;
+  padding-top: 12px;
   text-align: center;
   width: 200px;
   max-width: 400px;
-  padding: 12px;
-  height: 30px;
+  /* padding: 12px; */
+  /* height: 30px; */
 }
 
 .content input[type="text"],
@@ -112,7 +140,7 @@ div.main {
   height: 60px;
   width: 100%;
   font-size: 20px;
-  background-color: white;
+  /* background-color: white; */
   cursor: pointer;
 }
 .content input[type="reset"]:hover,
@@ -121,9 +149,9 @@ div.main {
   background-color: #f2f2f2;
 }
 
-.content tr:nth-child(odd) {
+/* .content tr:nth-child(odd) {
   background-color: #e9e9e9;
-}
+} */
 
 .box {
   height: 2vh;
@@ -429,4 +457,8 @@ div.unreachableRedirect {
   width: 40%;
   float: right;
   font-size: 50px;
+}
+
+div.roundImage {
+  border-radius: 40px;
 }

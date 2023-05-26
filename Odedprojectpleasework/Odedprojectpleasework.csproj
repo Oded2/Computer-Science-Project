@@ -73,20 +73,27 @@
     <Content Include="App_Data\Database1_log.ldf">
       <DependentUpon>Database1.mdf</DependentUpon>
     </Content>
+    <Content Include="Bootstrap\bootstrap1.css" />
     <Content Include="dashboard.aspx" />
     <Content Include="flightlogger.aspx" />
     <Content Include="flights.aspx" />
     <Content Include="gallery.aspx" />
+    <Content Include="Images\airplane.png" />
     <Content Include="Images\image1.jpeg" />
     <Content Include="Images\image2.jpeg" />
     <Content Include="Images\image3.jpeg" />
     <Content Include="Images\image4.jpeg" />
     <Content Include="Images\image5.jpeg" />
+    <Content Include="Images\logo.png" />
+    <Content Include="Images\logo_transparent.png" />
     <Content Include="index.aspx" />
     <Content Include="login.aspx" />
+    <Content Include="logo_transparent.png" />
+    <Content Include="App_Data\airports.xml" />
     <Content Include="script.js" />
     <Content Include="signup.aspx" />
     <Content Include="style.css" />
+    <Content Include="Style\airports.css" />
     <Content Include="unreachable.aspx" />
     <Content Include="unreachableScript.js" />
     <Content Include="Web.config" />
@@ -107,6 +114,8 @@
     <Compile Include="airports.aspx.designer.cs">
       <DependentUpon>airports.aspx</DependentUpon>
     </Compile>
+    <Compile Include="App_Code\HtmlUtils.cs" />
+    <Compile Include="App_Code\TblUtils.cs" />
     <Compile Include="dashboard.aspx.cs">
       <DependentUpon>dashboard.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>

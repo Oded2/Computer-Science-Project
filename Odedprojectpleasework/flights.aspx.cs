@@ -1,12 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Data;
-using System.Linq;
-using System.Runtime.InteropServices;
-using System.Web;
-using System.Web.UI;
 using System.Web.UI.HtmlControls;
-using System.Web.UI.WebControls;
 
 namespace Odedprojectpleasework
 {
@@ -29,16 +23,16 @@ namespace Odedprojectpleasework
             foreach (DataRow dr in dt.Rows)
             {
                 var tr = new HtmlTableRow();
-                addTdDate(tr, dr, "Date");
+                TblUtils.addTdDate(tr, dr, "Date");
                 addTotalFlightTime(tr, dr);
-                addTd(tr, dr, "TimeDeparture");
-                addTd(tr, dr, "AirDeparture");
-                addTd(tr, dr, "TimeLanding");
-                addTd(tr, dr, "AirDestination");
-                addTd(tr, dr, "Type");
-                addTd(tr, dr, "Model");
-                addTd(tr, dr, "Callsign");
-                addTd(tr, dr, "Notes");
+                TblUtils.addTd(tr, dr, "TimeDeparture");
+                TblUtils.addTd(tr, dr, "AirDeparture");
+                TblUtils.addTd(tr, dr, "TimeLanding");
+                TblUtils.addTd(tr, dr, "AirDestination");
+                TblUtils.addTd(tr, dr, "Type");
+                TblUtils.addTd(tr, dr, "Model");
+                TblUtils.addTd(tr, dr, "Callsign");
+                TblUtils.addTd(tr, dr, "Notes");
                 logbook.Rows.Add(tr);
 
 
@@ -48,16 +42,6 @@ namespace Odedprojectpleasework
 
 
 
-        }
-        void addTd(HtmlTableRow tr, String value)
-        {
-            var td = new HtmlTableCell();
-            td.InnerText = value;
-            tr.Cells.Add(td);
-        }
-        void addTd(HtmlTableRow tr, DataRow dr, String fieldName)
-        {
-            addTd(tr, dr[fieldName].ToString());
         }
         void addTotalFlightTime(HtmlTableRow tr, DataRow dr)
         {
@@ -81,14 +65,8 @@ namespace Odedprojectpleasework
             {
                 final = (int)ts.TotalHours + " Hours and " + ts.Minutes + " Minutes";
             }
+            TblUtils.addTd(tr, final);
 
-            addTd(tr, final);
-
-        }
-        void addTdDate(HtmlTableRow tr, DataRow dr, String fieldName){
-            var p = dr[fieldName];
-            var d = DateTime.Parse(p.ToString());
-            addTd(tr, d.ToString("dd/MM/yyyy"));
         }
     }
 }

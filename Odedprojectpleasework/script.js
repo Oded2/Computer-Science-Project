@@ -112,3 +112,7 @@ function validateFlightLog() {
     b && validateText("Model of Aircraft", document.getElementById("logModel"));
   return b;
 }
+
+function contactUs() {
+  document.location.href = "mailto:oded@benamotz.com";
+}

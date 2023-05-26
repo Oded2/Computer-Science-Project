@@ -1,0 +1,103 @@
+<airports>
+	<airport>
+		<name>Ben Gurion Airport</name>
+		<code>LLBG</code>
+		<location>Tel Aviv</location>
+		<description>Ben Gurion Airport, located in Tel Aviv, is the main international airport in Israel. It serves as a major hub for both domestic and international flights, offering a wide range of passenger and cargo services.</description>
+		<coordinates>
+			<latitude>32.0019</latitude>
+			<longitude>34.8854</longitude>
+		</coordinates>
+	</airport>
+	<airport>
+		<name>Eilat Airport</name>
+		<code>LLET</code>
+		<location>Eilat</location>
+		<description>Eilat Airport, located in the resort city of Eilat, serves as a gateway for tourists visiting the southernmost part of Israel. It offers domestic and limited international flights, connecting visitors to popular destinations in the region.</description>
+		<coordinates>
+			<latitude>29.7258</latitude>
+			<longitude>35.0060</longitude>
+		</coordinates>
+	</airport>
+	<airport>
+		<name>Ovda Airport</name>
+		<code>LLOV</code>
+		<location>Eilat</location>
+		<description>Ovda Airport, located in Eilat, is primarily used for domestic flights. It serves as an alternative airport for the region, particularly during peak tourist seasons.</description>
+		<coordinates>
+			<latitude>29.9402</latitude>
+			<longitude>34.9358</longitude>
+		</coordinates>
+	</airport>
+	<airport>
+		<name>Haifa Airport</name>
+		<code>LLHA</code>
+		<location>Haifa</location>
+		<description>Haifa Airport, situated in Haifa, provides domestic flight services. It offers convenient access to the northern region of Israel.</description>
+		<coordinates>
+			<latitude>32.8094</latitude>
+			<longitude>35.0433</longitude>
+		</coordinates>
+	</airport>
+	<airport>
+		<name>Rosh Pina Airport</name>
+		<code>LLIB</code>
+		<location>Rosh Pina</location>
+		<description>Rosh Pina Airport, located in Rosh Pina, is a small airport serving general aviation and private flights in the northern region of Israel.</description>
+		<coordinates>
+			<latitude>32.9780</latitude>
+			<longitude>35.5711</longitude>
+		</coordinates>
+	</airport>
+	<airport>
+		<name>Ein Yahav Airport</name>
+		<code>LLEY</code>
+		<location>Ein Yahav</location>
+		<description>Ein Yahav Airport, situated in Ein Yahav, provides essential air services for the southern region of Israel.</description>
+		<coordinates>
+			<latitude>30.6206</latitude>
+			<longitude>35.2033</longitude>
+		</coordinates>
+	</airport>
+	<airport>
+		<name>Rimon Airport</name>
+		<code>MIP</code>
+		<location>Mitzpe Ramon</location>
+		<description>Rimon Airport, located in Mitzpe Ramon, serves as a regional airport catering to the needs of the Negev region. It offers facilities for general aviation and recreational flying.</description>
+		<coordinates>
+			<latitude>30.6092</latitude>
+			<longitude>34.7761</longitude>
+		</coordinates>
+	</airport>
+	<airport>
+		<name>Bar Yehuda Airport</name>
+		<code>MTZ</code>
+		<location>Masada</location>
+		<description>Bar Yehuda Airport, situated near Masada, provides access to the southern region of Israel. It primarily serves as a base for scenic flights and aviation-related tourism activities.</description>
+		<coordinates>
+			<latitude>31.3286</latitude>
+			<longitude>35.3886</longitude>
+		</coordinates>
+	</airport>
+	<airport>
+		<name>Megiddo Airport</name>
+		<code>LLMG</code>
+		<location>Megiddo</location>
+		<description>Megiddo Airport, located near the ancient city of Megiddo, offers facilities for recreational flying and private aviation. It serves the northern region of Israel.</description>
+		<coordinates>
+			<latitude>32.6008</latitude>
+			<longitude>35.2289</longitude>
+		</coordinates>
+	</airport>
+	<airport>
+		<name>Herzliya Airport</name>
+		<code>LLHZ</code>
+		<location>Herzliya</location>
+		<description>Herzliya Airport, situated in Herzliya, is a general aviation airport that serves as a popular destination for private flights and flight training. It is located near the Mediterranean coast.</description>
+		<coordinates>
+			<latitude>32.1669</latitude>
+			<longitude>34.8211</longitude>
+		</coordinates>
+	</airport>
+</airports>
+

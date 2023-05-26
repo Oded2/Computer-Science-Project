@@ -18,7 +18,6 @@ namespace Odedprojectpleasework
 
         protected void Page_Load(object sender, EventArgs e)
         {
-
             if (Request.Form["submit"] != null)
             {
                 String errMessage = "";

@@ -9,23 +9,29 @@ Inherits="Odedprojectpleasework.flights" %>
   ContentPlaceHolderID="ContentPlaceHolder1"
   runat="server"
 >
-  <div class="container">
-    <table class="table table-hover" runat="server" id="logbook">
+    <div class="content">
+    <table class="" runat="server" id="logbook">
       <thead>
-        <tr class="table-primary">
-          <th>Date</th>
-          <th>Total Flight Time</th>
-          <th>Time of Departure</th>
-          <th>Airport of Departure</th>
-          <th>Time of Landing</th>
-          <th>Airport of Destination</th>
-          <th>Type of Aircraft</th>
-          <th>Model of Aircraft</th>
-          <th>Aircraft Callsign</th>
-          <th>Notes</th>
+        <tr>
+          <th rowspan="2">Date</th>
+          <th rowspan="2">Duration</th>
+          <th colspan="2">Departure</th>
+          <th colspan="2">Landing</th>
+          <th colspan="3">Aircraft</th>
+          <th rowspan="2">Notes</th>
+        </tr>
+        <tr>
+            <th>Time</th>
+            <th>Airport</th>
+            <th>Time</th>
+            <th>Airport</th>
+            <th>Type</th>
+            <th>Model</th>
+            <th>Callsign</th>
         </tr>
       </thead>
       <tbody></tbody>
     </table>
-  </div>
+
+    </div>
 </asp:Content>
