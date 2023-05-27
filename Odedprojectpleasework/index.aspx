@@ -23,9 +23,11 @@
           heights!</p>
         <div>
           <button type="button" class="btn btn-outline-primary btn-lg px-4 me-md-2" onclick="contactUs()">Contact
-            Us</a></button>
+            Us</button>
+
 
         </div>
+
 
       </div>
       <div class="right">
@@ -34,4 +36,5 @@
 
       </div>
     </div>
+      <h3>This site has been visited <%=totalVisits %> times</h3>
   </asp:Content>
