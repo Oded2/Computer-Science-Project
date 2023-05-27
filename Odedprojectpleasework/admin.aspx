@@ -15,6 +15,7 @@
             <th>GPA</th>
             <th>Email Address</th>
             <th>Recieving mailing?</th>
+            <th>Admin?</th>
             <th>Action</th>
           </tr>
         </table>

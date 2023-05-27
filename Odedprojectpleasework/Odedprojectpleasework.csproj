@@ -70,11 +70,11 @@
     <Content Include="about.aspx" />
     <Content Include="admin.aspx" />
     <Content Include="airports.aspx" />
+    <Content Include="flight.js" />
     <Content Include="App_Data\Database1.mdf" />
     <Content Include="App_Data\Database1_log.ldf">
       <DependentUpon>Database1.mdf</DependentUpon>
     </Content>
-    <Content Include="dashboard.aspx" />
     <Content Include="flight.aspx" />
     <Content Include="flightlogger.aspx" />
     <Content Include="flightlogger.js" />
@@ -117,6 +117,7 @@
     <Content Include="temp.html" />
     <Content Include="unreachable.aspx" />
     <Content Include="unreachableScript.js" />
+    <Content Include="user.aspx" />
     <Content Include="Web.config" />
     <Content Include="logout.aspx" />
   </ItemGroup>
@@ -144,13 +145,6 @@
     </Compile>
     <Compile Include="App_Code\HtmlUtils.cs" />
     <Compile Include="App_Code\TblUtils.cs" />
-    <Compile Include="dashboard.aspx.cs">
-      <DependentUpon>dashboard.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="dashboard.aspx.designer.cs">
-      <DependentUpon>dashboard.aspx</DependentUpon>
-    </Compile>
     <Compile Include="flight.aspx.cs">
       <DependentUpon>flight.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -222,6 +216,13 @@
     </Compile>
     <Compile Include="unreachable.aspx.designer.cs">
       <DependentUpon>unreachable.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="user.aspx.cs">
+      <DependentUpon>user.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="user.aspx.designer.cs">
+      <DependentUpon>user.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>

@@ -1,6 +1,8 @@
+//for image gallery
 let imagenumber = 1;
 const maxImages = 5;
 
+//moving the image
 function moveimage(d) {
   imagenumber += d;
   if (imagenumber > maxImages) {
@@ -11,7 +13,7 @@ function moveimage(d) {
   }
   loadImage();
 }
-
+//loading the image
 function loadImage() {
   const img = document.getElementById("mainImage");
   const source = "Images/image" + imagenumber + ".jpeg";
@@ -22,6 +24,7 @@ function onLoad() {
   loadImage();
 }
 
+//frontend protection for user not typing incorrect fields
 function validateSignupForm() {
   let b = true;
 
@@ -33,6 +36,7 @@ function validateSignupForm() {
   return b;
 }
 
+//powers the validate signup form
 function validateText(name, val) {
   og = val;
   val = val.value;
@@ -81,12 +85,14 @@ function validateText(name, val) {
   return true;
 }
 
+//gets the maximum day, so users cannot input a date that is later than today
 function maxDay() {
   var currentDate = new Date();
   var formattedDate = currentDate.toISOString().split("T")[0];
   document.getElementById("logDate").max = formattedDate;
 }
 
+//frontend validation for the flight log
 function validateFlightLog() {
   let b = true;
   b = b && validateText("Date", document.getElementById("logDate"));
@@ -113,10 +119,12 @@ function validateFlightLog() {
   return b;
 }
 
+//redirects to my email
 function contactUs() {
   document.location.href = "mailto:oded@benamotz.com";
 }
 
+//make sure the user wants to delete the flight and didn't click it by accident
 function deleteFlight(id) {
   if (!confirm("Are you sure you want to delete this flight?")) {
     return false;
@@ -124,4 +132,20 @@ function deleteFlight(id) {
 
   document.location.href = `flight.aspx?id=${id}&action=del`;
   return false;
+}
+
+//double check to make sure the admin really wants to delete the user
+function validateUserEdit() {
+  if (document.getElementById("ContentPlaceHolder1_userDel").checked) {
+    if (!confirm("Are you sure you want to DELETE the user?")) {
+      return false;
+    }
+    if (
+      !confirm("Double checking: Are you sure you want to DELETE the user?")
+    ) {
+      return false;
+    }
+  }
+
+  return true;
 }

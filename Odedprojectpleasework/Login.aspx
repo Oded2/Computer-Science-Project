@@ -25,6 +25,7 @@
           <tr>
             <td colspan="2">
               <input type="submit" name="submit" id="submit" value="Log In">
+              <p>&nbsp;</p>
               <p>Not a member? <a href="signup.aspx">Sign Up</a></p>
 
             </td>

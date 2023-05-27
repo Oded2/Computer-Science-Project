@@ -59,7 +59,7 @@ namespace Odedprojectpleasework
 
 
                         String sql = "insert into Users values('" + id + "',N'" + fname + "',N'" + lname + "',N'" + tel + "',N'" + address + "','" + dob + "'," + gpa + ",'" +
-                            email + "','" + p + "', '" + password + "')";
+                            email + "','" + p + "', '" + password + "', 0)";
                         int rowsAffected = MyAdoHelper.DoQuery("Database1.mdf", sql);
                         if (rowsAffected == 0)
                         {

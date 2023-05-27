@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.InteropServices;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
@@ -13,6 +14,7 @@ namespace Odedprojectpleasework
         protected void Page_Load(object sender, EventArgs e)
         {
             var userId = Session["user_id"];
+
             if(userId == null)
             {
                 Response.Redirect("unreachable.aspx");

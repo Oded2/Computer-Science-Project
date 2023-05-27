@@ -21,31 +21,51 @@ namespace Odedprojectpleasework
                 {
                     return;
                 }
+                String sql = "select * from Users where id ='" + c.Value + "'";
+                var dt = MyAdoHelper.ExecuteDataTable("Database1.mdf", sql);
+                if (dt.Rows.Count == 0)
+                {
+                    return;
+                }
+                var dr = dt.Rows[0];
+                var isAdmin = bool.Parse("" + dr["isAdmin"]);
                 Session["user_id"] = c.Value;
+                if (isAdmin)
+                {
+                    Session["is_admin"] = "yes";
+                }
                 Response.Redirect("flights.aspx");
             }
             if (Request.Form["submit"] != null)
             {
 
                 //form was submitted
-                String database = "Database1.mdf";
                 String id = Request.Form["id"];
                 String password = Request.Form["password"];
-                String query = "select * from Users where id ='" + id + "' and password = '" + password + "'";
-
-                if (!MyAdoHelper.IsExist(database, query))
+                String sql = "select * from Users where id ='" + id + "' and password = '" + password + "'";
+                var dt = MyAdoHelper.ExecuteDataTable("Database1.mdf", sql);
+                if (dt.Rows.Count == 0)
                 {
                     Response.Write("Sorry, your username or password is incorrect");
+                    return;
                 }
                 else
                 {
+                    var dr = dt.Rows[0];
+                    var isAdmin = bool.Parse("" + dr["isAdmin"]);
                     Session["user_id"] = id;
-                    HttpCookie userCookie = new HttpCookie("user_info");
-                    userCookie.Value = id;
+                    if (isAdmin)
+                    {
+                        Session["is_admin"] = "yes";
+                    }
+                    
+                    HttpCookie userCookie = new HttpCookie("user_info")
+                    {
+                        Value = id
+                    };
                     Response.Cookies.Add(userCookie);
                     Response.Redirect("flights.aspx");
                 }
-
             }
 
 
