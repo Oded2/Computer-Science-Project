@@ -116,3 +116,12 @@ function validateFlightLog() {
 function contactUs() {
   document.location.href = "mailto:oded@benamotz.com";
 }
+
+function deleteFlight(id) {
+  if (!confirm("Are you sure you want to delete this flight?")) {
+    return false;
+  }
+
+  document.location.href = `flight.aspx?id=${id}&action=del`;
+  return false;
+}

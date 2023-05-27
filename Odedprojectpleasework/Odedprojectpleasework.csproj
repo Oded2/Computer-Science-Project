@@ -74,26 +74,46 @@
       <DependentUpon>Database1.mdf</DependentUpon>
     </Content>
     <Content Include="dashboard.aspx" />
+    <Content Include="flight.aspx" />
     <Content Include="flightlogger.aspx" />
     <Content Include="flightlogger.js" />
     <Content Include="flights.aspx" />
     <Content Include="gallery.aspx" />
+    <Content Include="Gallery\airportmap.js" />
+    <Content Include="Gallery\airportsmap.jpg" />
+    <Content Include="Gallery\gallery.css" />
+    <Content Include="Gallery\gallery.js" />
+    <Content Include="Gallery\images\image %281%29.jpeg" />
+    <Content Include="Gallery\images\image %2810%29.jpeg" />
+    <Content Include="Gallery\images\image %2811%29.jpeg" />
+    <Content Include="Gallery\images\image %2812%29.jpeg" />
+    <Content Include="Gallery\images\image %2813%29.jpeg" />
+    <Content Include="Gallery\images\image %2814%29.jpeg" />
+    <Content Include="Gallery\images\image %2815%29.jpeg" />
+    <Content Include="Gallery\images\image %2816%29.jpeg" />
+    <Content Include="Gallery\images\image %2817%29.jpeg" />
+    <Content Include="Gallery\images\image %2818%29.jpeg" />
+    <Content Include="Gallery\images\image %2819%29.jpeg" />
+    <Content Include="Gallery\images\image %2820%29.jpeg" />
+    <Content Include="Gallery\images\image %2821%29.jpeg" />
+    <Content Include="Gallery\images\image %2822%29.jpeg" />
+    <Content Include="Gallery\images\image %2823%29.jpeg" />
+    <Content Include="Gallery\images\image %2824%29.jpeg" />
+    <Content Include="Gallery\images\image %286%29.jpeg" />
+    <Content Include="Gallery\images\image %287%29.jpeg" />
+    <Content Include="Gallery\images\image %288%29.jpeg" />
+    <Content Include="Gallery\images\image %289%29.jpeg" />
     <Content Include="Images\airplane.png" />
-    <Content Include="Images\image1.jpeg" />
-    <Content Include="Images\image2.jpeg" />
-    <Content Include="Images\image3.jpeg" />
-    <Content Include="Images\image4.jpeg" />
-    <Content Include="Images\image5.jpeg" />
     <Content Include="Images\logo.png" />
     <Content Include="Images\logo_transparent.png" />
     <Content Include="index.aspx" />
     <Content Include="login.aspx" />
-    <Content Include="logo_transparent.png" />
     <Content Include="App_Data\airports.xml" />
     <Content Include="script.js" />
     <Content Include="signup.aspx" />
     <Content Include="style.css" />
     <Content Include="Style\airports.css" />
+    <Content Include="temp.html" />
     <Content Include="unreachable.aspx" />
     <Content Include="unreachableScript.js" />
     <Content Include="Web.config" />
@@ -122,6 +142,13 @@
     </Compile>
     <Compile Include="dashboard.aspx.designer.cs">
       <DependentUpon>dashboard.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="flight.aspx.cs">
+      <DependentUpon>flight.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="flight.aspx.designer.cs">
+      <DependentUpon>flight.aspx</DependentUpon>
     </Compile>
     <Compile Include="flightlogger.aspx.cs">
       <DependentUpon>flightlogger.aspx</DependentUpon>

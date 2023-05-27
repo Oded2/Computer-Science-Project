@@ -54,14 +54,14 @@ namespace Odedprojectpleasework
             sb.Append("insert into FlightLog([UserId], [Date],[Callsign],[TimeDeparture],[AirDeparture],[TimeLanding] ,[AirDestination],[Type], [Model], [Notes]) values(");
             sb.Append(userID);
             sb.Append(",'" + date + "',");
-            sb.Append("'" + callsign + "',");
+            sb.Append("'" + callsign.Replace("'", "''") + "',");
             sb.Append("'" + takeoff+ "',");
             sb.Append("'" + departure+ "',");
             sb.Append("'" + landing+ "',");
             sb.Append("'" + destination + "',");
             sb.Append("'" + airType + "',");
-            sb.Append("'" + model+ "',");
-            sb.Append("'" + notes + "'");
+            sb.Append("'" + model.Replace("'", "''") + "',");
+            sb.Append("'" + notes.Replace("'", "''") + "'");
             sb.Append(")");
             String sql = sb.ToString();
             int rowsAffected = MyAdoHelper.DoQuery("Database1.mdf", sql);

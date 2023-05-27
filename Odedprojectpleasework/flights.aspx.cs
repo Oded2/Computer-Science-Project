@@ -22,6 +22,11 @@ namespace Odedprojectpleasework
 
             foreach (DataRow dr in dt.Rows)
             {
+                String notes = dr["Notes"].ToString();
+                if(notes.Length > 20)
+                {
+                    notes = notes.Substring(0, 20) + "...";
+                }
                 var tr = new HtmlTableRow();
                 TblUtils.addTdDate(tr, dr, "Date");
                 addTotalFlightTime(tr, dr);
@@ -32,7 +37,11 @@ namespace Odedprojectpleasework
                 TblUtils.addTd(tr, dr, "Type");
                 TblUtils.addTd(tr, dr, "Model");
                 TblUtils.addTd(tr, dr, "Callsign");
-                TblUtils.addTd(tr, dr, "Notes");
+                TblUtils.addTd(tr,notes, "tdLeft");
+                
+                var td = new HtmlTableCell();
+                td.InnerHtml = "<a href=\"flight.aspx?id=" + dr["id"] + "\">More</a>";
+                tr.Controls.Add(td);
                 logbook.Rows.Add(tr);
 
 
@@ -45,26 +54,7 @@ namespace Odedprojectpleasework
         }
         void addTotalFlightTime(HtmlTableRow tr, DataRow dr)
         {
-            var d =  DateTime.Parse( dr["Date"].ToString());
-            var t1 = dr["TimeDeparture"].ToString();
-            var t2 = dr["TimeLanding"].ToString();
-            var d1 = d + TimeSpan.Parse(t1);
-            var d2 = d + TimeSpan.Parse(t2);
-            var ts = d2 - d1;
-            if (ts.TotalSeconds < 0)
-            {
-                d1 = d1.AddDays(-1);
-                ts = d2 - d1;
-            }
-            String final;
-            if (ts.Minutes == 0)
-            {
-                final = (int)ts.TotalHours + " Hours";
-            }
-            else
-            {
-                final = (int)ts.TotalHours + " Hours and " + ts.Minutes + " Minutes";
-            }
+            String final = TblUtils.calcDuration(dr);
             TblUtils.addTd(tr, final);
 
         }

@@ -110,7 +110,6 @@ div.main {
   text-align: center;
   width: 200px;
   background-color: lightblue;
-
 }
 
 .content td {
@@ -119,8 +118,6 @@ div.main {
   text-align: center;
   width: 200px;
   max-width: 400px;
-  /* padding: 12px; */
-  /* height: 30px; */
 }
 
 .content input[type="text"],
@@ -384,11 +381,16 @@ div.aboutLeft {
   clear: left;
   float: left;
   padding: 30px;
-  width: 700px;
+  width: 30%;
 }
-div.aboutLeft h1 {
+div.aboutLeft h1,
+div.aboutLeft i {
   text-align: center;
   font-size: 100px;
+}
+
+body {
+  overflow-x: hidden;
 }
 
 div.aboutLeft,
@@ -461,4 +463,127 @@ div.unreachableRedirect {
 
 div.roundImage {
   border-radius: 40px;
+}
+
+div.unreachableParent a {
+  font-size: 50px;
+}
+
+.tdLeft {
+  padding: 10px;
+  text-align: left !important;
+}
+
+div.flightParent {
+  max-width: 100%;
+  height: 90vh;
+  max-height: 100%;
+  width: 100vw;
+  overflow: auto;
+}
+
+/* borders */
+/* div.flightMap {
+  border: 5px dashed red;
+}
+
+div.flightNotes {
+  border: 5px dashed aqua;
+}
+
+div.flightNoteTitle {
+  border: 5px dashed yellow;
+}
+div.flightInfo {
+  border: 5px dashed green;
+}
+
+div.flightTitle {
+  border: 5px dashed blue;
+} */
+
+/* borders */
+
+div.flightMap {
+  float: left;
+  margin-bottom: auto;
+  height: 80%;
+  width: 800px;
+}
+div.flightNotes {
+  height: 10em;
+  text-align: left;
+  box-shadow: 20px 20px 50px grey;
+  padding: 12px;
+  overflow: auto;
+}
+
+div.flightNoteTitle {
+  margin-bottom: 2%;
+  height: 50px;
+}
+div.flightNoteTitle > h1 {
+  font-size: 50px;
+}
+
+div.flightNoteTitle,
+div.flightNotes {
+  width: 40%;
+  float: right;
+  margin-right: 5%;
+}
+
+div.flightInfo {
+  position: relative;
+  float: left;
+  margin-top: 2%;
+  margin-left: 2%;
+  padding: 12px;
+  min-height: 400px;
+  height: 50%;
+  width: 50%;
+}
+div.flightInfo > h1,
+div.flightInfo span {
+  text-align: center;
+  font-size: 30px;
+}
+div.flightInfo .left {
+  text-align: left;
+}
+
+div.flightInfo .right {
+  text-align: right;
+}
+
+div.flightInfo p,
+div.flightInfo span {
+  font-size: 30px;
+}
+div.flightTitle {
+  width: 100%;
+  height: 5%;
+}
+
+div.flightTitle > h1,
+div.flightTitle span {
+  font-size: 30px;
+}
+button.deleteFlight {
+  border-radius: 10px;
+  border: none;
+  color: white;
+  cursor: pointer;
+  margin-top: 10%;
+  bottom: 30%;
+  width: 100%;
+  height: 50px;
+  background-color: #ff4760;
+  font-size: 30px;
+}
+button.deleteFlight:hover {
+  background-color: #ff5f74;
+}
+button.deleteFlight:active {
+  background-color: #ff5555;
 }

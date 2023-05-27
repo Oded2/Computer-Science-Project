@@ -3,7 +3,7 @@ AutoEventWireup="true" CodeBehind="flightlogger.aspx.cs"
 Inherits="Odedprojectpleasework.flightlogger" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
-  <script src="script.js"></script>May 2
+  <script src="script.js"></script>
   <script src="flightlogger.js"></script>
 </asp:Content>
 <asp:Content

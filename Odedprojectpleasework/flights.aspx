@@ -9,7 +9,7 @@ Inherits="Odedprojectpleasework.flights" %>
   ContentPlaceHolderID="ContentPlaceHolder1"
   runat="server"
 >
-    <div class="content">
+  <div class="content">
     <table class="" runat="server" id="logbook">
       <thead>
         <tr>
@@ -19,19 +19,19 @@ Inherits="Odedprojectpleasework.flights" %>
           <th colspan="2">Landing</th>
           <th colspan="3">Aircraft</th>
           <th rowspan="2">Notes</th>
+          <th rowspan="2">Actions</th>
         </tr>
         <tr>
-            <th>Time</th>
-            <th>Airport</th>
-            <th>Time</th>
-            <th>Airport</th>
-            <th>Type</th>
-            <th>Model</th>
-            <th>Callsign</th>
+          <th>Time</th>
+          <th>Airport</th>
+          <th>Time</th>
+          <th>Airport</th>
+          <th>Type</th>
+          <th>Model</th>
+          <th>Callsign</th>
         </tr>
       </thead>
       <tbody></tbody>
     </table>
-
-    </div>
+  </div>
 </asp:Content>
