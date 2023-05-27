@@ -482,28 +482,6 @@ div.flightParent {
   overflow: auto;
 }
 
-/* borders */
-/* div.flightMap {
-  border: 5px dashed red;
-}
-
-div.flightNotes {
-  border: 5px dashed aqua;
-}
-
-div.flightNoteTitle {
-  border: 5px dashed yellow;
-}
-div.flightInfo {
-  border: 5px dashed green;
-}
-
-div.flightTitle {
-  border: 5px dashed blue;
-} */
-
-/* borders */
-
 div.flightMap {
   float: left;
   margin-bottom: auto;
