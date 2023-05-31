@@ -8,7 +8,7 @@
       <p>Select a thumbnail below to view the image</p> 
     </div> 
     <div id="image-gallery">
-      <img id="current-image" src="Gallery/images/image1.jpeg" alt="Image 1" >
+      <img id="current-image" src="Gallery/images/image (1).jpeg" alt="Image 1" >
     </div>
     <div id="image-nav">
       <span onclick="moveImage(-1)" class="navButton">&lt;&lt;</span>

@@ -1,28 +1,4 @@
-//for image gallery
-let imagenumber = 1;
-const maxImages = 5;
 
-//moving the image
-function moveimage(d) {
-  imagenumber += d;
-  if (imagenumber > maxImages) {
-    imagenumber = 1;
-  }
-  if (imagenumber < 1) {
-    imagenumber = maxImages;
-  }
-  loadImage();
-}
-//loading the image
-function loadImage() {
-  const img = document.getElementById("mainImage");
-  const source = "Images/image" + imagenumber + ".jpeg";
-  img.src = source;
-}
-
-function onLoad() {
-  loadImage();
-}
 
 //frontend protection for user not typing incorrect fields
 function validateSignupForm() {

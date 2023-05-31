@@ -47,7 +47,7 @@ Inherits="Odedprojectpleasework.signup" %>
             </td>
             <th>GPA</th>
             <td>
-              <input type="number" id="gpa" name="gpa" max="5" min="0" value="<%=Request.Form["gpa"] %>" required/>
+              <input type="number" id="gpa" name="gpa" max="5" min="0"  step=".01" value="<%=Request.Form["gpa"] %>" required/>
             </td>
           </tr>
           <tr>

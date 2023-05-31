@@ -26,7 +26,7 @@
                         <th>Date of Birth</th>
                         <td><input type="date" id="dob" runat="server"></td>
                         <th>GPA</th>
-                        <td><input type="number" id="gpa" runat="server" min="0" max="5"></td>
+                        <td><input type="number" id="gpa" runat="server" min="0" max="5" step=".01"></td>
                     </tr>
                     <tr>
                         <th>Email</th>
