@@ -1,6 +1,11 @@
-
-
-//frontend protection for user not typing incorrect fields
+/**
+ * The function validates a signup form by checking if certain fields are empty or contain specific
+ * characters.
+ * @returns The function `validateSignupForm()` returns a boolean value, which is the result of the
+ * logical AND operation between the results of several calls to the `validateText()` function. The
+ * `validateText()` function also returns a boolean value, which is either `true` if the input value
+ * passes all the validation checks, or `false` if it fails any of them.
+ */
 function validateSignupForm() {
   let b = true;
 
@@ -61,14 +66,21 @@ function validateText(name, val) {
   return true;
 }
 
-//gets the maximum day, so users cannot input a date that is later than today
+/**
+ * The function sets the maximum date for a date input field to the current date.
+ */
 function maxDay() {
   var currentDate = new Date();
   var formattedDate = currentDate.toISOString().split("T")[0];
   document.getElementById("logDate").max = formattedDate;
 }
 
-//frontend validation for the flight log
+/**
+ * The function validates the input fields for a flight log form.
+ * @returns a boolean value, which is the result of validating various input fields in a flight log
+ * form. If all the input fields pass validation, the function returns `true`, otherwise it returns
+ * `false`.
+ */
 function validateFlightLog() {
   let b = true;
   b = b && validateText("Date", document.getElementById("logDate"));
@@ -95,12 +107,20 @@ function validateFlightLog() {
   return b;
 }
 
-//redirects to my email
+/**
+ * The function redirects the user to an email address when the "contact us" button is clicked.
+ */
 function contactUs() {
   document.location.href = "mailto:oded@benamotz.com";
 }
 
-//make sure the user wants to delete the flight and didn't click it by accident
+/**
+ * The function prompts the user to confirm the deletion of a flight and redirects to a page with the
+ * corresponding flight ID and action.
+ * @param id - The id parameter is the unique identifier of the flight that needs to be deleted.
+ * @returns a boolean value of false if the user cancels the confirmation prompt, and it is returning
+ * false again after setting the document location to a specific URL.
+ */
 function deleteFlight(id) {
   if (!confirm("Are you sure you want to delete this flight?")) {
     return false;
@@ -110,7 +130,12 @@ function deleteFlight(id) {
   return false;
 }
 
-//double check to make sure the admin really wants to delete the user
+/**
+ * The function validates user edits and prompts for confirmation before deleting a user.
+ * @returns a boolean value. If the user has checked the "userDel" checkbox and has confirmed twice
+ * that they want to delete the user, then the function will return true. Otherwise, if the user
+ * cancels either confirmation prompt, the function will return false.
+ */
 function validateUserEdit() {
   if (document.getElementById("ContentPlaceHolder1_userDel").checked) {
     if (!confirm("Are you sure you want to DELETE the user?")) {

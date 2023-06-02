@@ -14,6 +14,12 @@ namespace Odedprojectpleasework
 
 
 
+
+            /* This code block is checking if the form has been submitted or not. If the form has not
+            been submitted, it checks if there is a cookie named "user_info". If the cookie exists,
+            it retrieves the user's information from the database and sets the session variables
+            accordingly. If the user is an admin, it sets the "is_admin" session variable to "yes".
+            Finally, it redirects the user to the "flights.aspx" page. */
             if (Request.Form["submit"] == null)
             {
                 HttpCookie c = Request.Cookies["user_info"];
@@ -36,6 +42,13 @@ namespace Odedprojectpleasework
                 }
                 Response.Redirect("flights.aspx");
             }
+            /* This code block is checking if the login form has been submitted or not. If the form has
+            been submitted, it retrieves the user's inputted ID and password from the form. It then
+            queries the database to check if there is a matching user with the inputted ID and
+            password. If there is no matching user, it displays an error message. If there is a
+            matching user, it sets the session variables for the user's ID and whether or not they
+            are an admin. It also creates a cookie named "user_info" with the user's ID and adds it
+            to the response. Finally, it redirects the user to the "flights.aspx" page. */
             if (Request.Form["submit"] != null)
             {
 
@@ -58,7 +71,7 @@ namespace Odedprojectpleasework
                     {
                         Session["is_admin"] = "yes";
                     }
-                    
+
                     HttpCookie userCookie = new HttpCookie("user_info")
                     {
                         Value = id

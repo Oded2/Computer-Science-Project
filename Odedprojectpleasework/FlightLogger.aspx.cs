@@ -13,6 +13,11 @@ namespace Odedprojectpleasework
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            /* This code block is checking if the current request is a postback or not. If it is not a
+            postback, it loads an XML file containing airport codes and names, and adds them as
+            options to two dropdown lists (`logAirportTakeoff` and `logAirportLanding`) on the web
+            page. This is likely done to allow the user to select the airports they are departing
+            from and arriving at when logging a flight. */
             if (!IsPostBack)
             {
                 var fileLocation = Server.MapPath("~/App_Data/airports.xml");
@@ -29,18 +34,33 @@ namespace Odedprojectpleasework
 
             }
 
+            /* This code block is checking if the `user_id` key exists in the `Session` object. If it
+            does not exist, the user is redirected to the `unreachable.aspx` page and the function
+            returns. This is likely done to ensure that only authenticated users can access the
+            functionality of this page. */
             var userID = Session["user_id"];
-            if(userID == null)
+            if (userID == null)
             {
                 Response.Redirect("unreachable.aspx");
                 return;
             }
             userID = userID.ToString();
 
+            /* This code block is checking if the form has been submitted or not. If the `submit` key
+            does not exist in the `Request.Form` object, it means that the form has not been
+            submitted yet, so the function returns without doing anything. This is likely done to
+            prevent the code from executing prematurely before the user has submitted the form. */
             if (Request.Form["submit"] == null)
             {
                 return;
             }
+            /* This code block is retrieving data from the form submitted by the user and constructing
+            an SQL query to insert the data into a database table called `FlightLog`. The
+            `StringBuilder` object is used to construct the SQL query string, which includes the
+            user ID, date, callsign, departure and arrival airports, aircraft type and model, and
+            any notes provided by the user. The `MyAdoHelper.DoQuery` method is then used to execute
+            the SQL query and insert the data into the database. Finally, the user is redirected to
+            the `flights.aspx` page. */
             String date = Request.Form["logDate"];
             String callsign = Request.Form["callsign"];
             String takeoff = Request.Form["logTakeoff"];
@@ -55,9 +75,9 @@ namespace Odedprojectpleasework
             sb.Append(userID);
             sb.Append(",'" + date + "',");
             sb.Append("'" + callsign.Replace("'", "''") + "',");
-            sb.Append("'" + takeoff+ "',");
-            sb.Append("'" + departure+ "',");
-            sb.Append("'" + landing+ "',");
+            sb.Append("'" + takeoff + "',");
+            sb.Append("'" + departure + "',");
+            sb.Append("'" + landing + "',");
             sb.Append("'" + destination + "',");
             sb.Append("'" + airType + "',");
             sb.Append("'" + model.Replace("'", "''") + "',");

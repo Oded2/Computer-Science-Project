@@ -11,6 +11,8 @@ namespace Odedprojectpleasework
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            /* This code is used to clear the session and delete the user_info cookie. It is typically
+            used when a user logs out of a website. */
             Session.Clear();
             HttpCookie c = Request.Cookies["user_info"];
             if (c != null)
