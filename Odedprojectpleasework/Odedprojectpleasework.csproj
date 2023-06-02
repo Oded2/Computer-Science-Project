@@ -122,6 +122,7 @@
     <Content Include="Pages\webPages\unreachable.aspx" />
     <Content Include="Pages\javascript\unreachableScript.js" />
     <Content Include="Pages\webPages\user.aspx" />
+    <Content Include="start.aspx" />
     <Content Include="Web.config" />
     <Content Include="Pages\webPages\logout.aspx" />
   </ItemGroup>
@@ -227,6 +228,13 @@
     </Compile>
     <Compile Include="Pages\webPages\user.aspx.designer.cs">
       <DependentUpon>user.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="start.aspx.cs">
+      <DependentUpon>start.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="start.aspx.designer.cs">
+      <DependentUpon>start.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
