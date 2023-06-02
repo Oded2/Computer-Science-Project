@@ -67,23 +67,27 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="about.aspx" />
-    <Content Include="admin.aspx" />
-    <Content Include="airports.aspx" />
-    <Content Include="flight.js" />
+    <Content Include="Gallery\images\image %282%29.jpeg" />
+    <Content Include="Gallery\images\image %283%29.jpeg" />
+    <Content Include="Gallery\images\image %284%29.jpeg" />
+    <Content Include="Gallery\images\image %285%29.jpeg" />
+    <Content Include="Pages\webPages\about.aspx" />
+    <Content Include="Pages\webPages\admin.aspx" />
+    <Content Include="Pages\webPages\airports.aspx" />
+    <Content Include="Pages\javascript\flight.js" />
     <Content Include="App_Data\Database1.mdf" />
     <Content Include="App_Data\Database1_log.ldf">
       <DependentUpon>Database1.mdf</DependentUpon>
     </Content>
-    <Content Include="flight.aspx" />
-    <Content Include="flightlogger.aspx" />
-    <Content Include="flightlogger.js" />
-    <Content Include="flights.aspx" />
-    <Content Include="gallery.aspx" />
-    <Content Include="Gallery\airportmap.js" />
+    <Content Include="Pages\webPages\flight.aspx" />
+    <Content Include="Pages\webPages\flightlogger.aspx" />
+    <Content Include="Pages\javascript\flightlogger.js" />
+    <Content Include="Pages\webPages\flights.aspx" />
+    <Content Include="Pages\webPages\gallery.aspx" />
+    <Content Include="Pages\javascript\airportmap.js" />
     <Content Include="Gallery\airportsmap.jpg" />
-    <Content Include="Gallery\gallery.css" />
-    <Content Include="Gallery\gallery.js" />
+    <Content Include="Pages\style\gallery.css" />
+    <Content Include="Pages\javascript\gallery.js" />
     <Content Include="Gallery\images\image %281%29.jpeg" />
     <Content Include="Gallery\images\image %2810%29.jpeg" />
     <Content Include="Gallery\images\image %2811%29.jpeg" />
@@ -107,127 +111,127 @@
     <Content Include="Images\airplane.png" />
     <Content Include="Images\logo.png" />
     <Content Include="Images\logo_transparent.png" />
-    <Content Include="index.aspx" />
-    <Content Include="login.aspx" />
+    <Content Include="Pages\webPages\index.aspx" />
+    <Content Include="Pages\webPages\login.aspx" />
     <Content Include="App_Data\airports.xml" />
-    <Content Include="script.js" />
-    <Content Include="signup.aspx" />
-    <Content Include="style.css" />
-    <Content Include="Style\airports.css" />
-    <Content Include="temp.html" />
-    <Content Include="unreachable.aspx" />
-    <Content Include="unreachableScript.js" />
-    <Content Include="user.aspx" />
+    <Content Include="Pages\javascript\script.js" />
+    <Content Include="Pages\webPages\signup.aspx" />
+    <Content Include="Pages\style\style.css" />
+    <Content Include="Pages\style\airports.css" />
+    <Content Include="Pages\temp.html" />
+    <Content Include="Pages\webPages\unreachable.aspx" />
+    <Content Include="Pages\javascript\unreachableScript.js" />
+    <Content Include="Pages\webPages\user.aspx" />
     <Content Include="Web.config" />
-    <Content Include="logout.aspx" />
+    <Content Include="Pages\webPages\logout.aspx" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="about.aspx.cs">
+    <Compile Include="Pages\webPages\about.aspx.cs">
       <DependentUpon>about.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="about.aspx.designer.cs">
+    <Compile Include="Pages\webPages\about.aspx.designer.cs">
       <DependentUpon>about.aspx</DependentUpon>
     </Compile>
-    <Compile Include="admin.aspx.cs">
+    <Compile Include="Pages\webPages\admin.aspx.cs">
       <DependentUpon>admin.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="admin.aspx.designer.cs">
+    <Compile Include="Pages\webPages\admin.aspx.designer.cs">
       <DependentUpon>admin.aspx</DependentUpon>
     </Compile>
-    <Compile Include="airports.aspx.cs">
+    <Compile Include="Pages\webPages\airports.aspx.cs">
       <DependentUpon>airports.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="airports.aspx.designer.cs">
+    <Compile Include="Pages\webPages\airports.aspx.designer.cs">
       <DependentUpon>airports.aspx</DependentUpon>
     </Compile>
     <Compile Include="App_Code\HtmlUtils.cs" />
     <Compile Include="App_Code\TblUtils.cs" />
-    <Compile Include="flight.aspx.cs">
+    <Compile Include="Pages\webPages\flight.aspx.cs">
       <DependentUpon>flight.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="flight.aspx.designer.cs">
+    <Compile Include="Pages\webPages\flight.aspx.designer.cs">
       <DependentUpon>flight.aspx</DependentUpon>
     </Compile>
-    <Compile Include="flightlogger.aspx.cs">
+    <Compile Include="Pages\webPages\flightlogger.aspx.cs">
       <DependentUpon>flightlogger.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="flightlogger.aspx.designer.cs">
+    <Compile Include="Pages\webPages\flightlogger.aspx.designer.cs">
       <DependentUpon>flightlogger.aspx</DependentUpon>
     </Compile>
-    <Compile Include="flights.aspx.cs">
+    <Compile Include="Pages\webPages\flights.aspx.cs">
       <DependentUpon>flights.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="flights.aspx.designer.cs">
+    <Compile Include="Pages\webPages\flights.aspx.designer.cs">
       <DependentUpon>flights.aspx</DependentUpon>
     </Compile>
-    <Compile Include="gallery.aspx.cs">
+    <Compile Include="Pages\webPages\gallery.aspx.cs">
       <DependentUpon>gallery.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="gallery.aspx.designer.cs">
+    <Compile Include="Pages\webPages\gallery.aspx.designer.cs">
       <DependentUpon>gallery.aspx</DependentUpon>
     </Compile>
-    <Compile Include="index.aspx.cs">
+    <Compile Include="Pages\webPages\index.aspx.cs">
       <DependentUpon>index.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="index.aspx.designer.cs">
+    <Compile Include="Pages\webPages\index.aspx.designer.cs">
       <DependentUpon>index.aspx</DependentUpon>
     </Compile>
-    <Compile Include="login.aspx.cs">
+    <Compile Include="Pages\webPages\login.aspx.cs">
       <DependentUpon>login.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="login.aspx.designer.cs">
+    <Compile Include="Pages\webPages\login.aspx.designer.cs">
       <DependentUpon>login.aspx</DependentUpon>
     </Compile>
-    <Compile Include="main.Master.cs">
+    <Compile Include="Pages\webPages\main.Master.cs">
       <DependentUpon>main.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="main.Master.designer.cs">
+    <Compile Include="Pages\webPages\main.Master.designer.cs">
       <DependentUpon>main.Master</DependentUpon>
     </Compile>
-    <Compile Include="signup.aspx.cs">
+    <Compile Include="Pages\webPages\signup.aspx.cs">
       <DependentUpon>signup.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="signup.aspx.designer.cs">
+    <Compile Include="Pages\webPages\signup.aspx.designer.cs">
       <DependentUpon>signup.aspx</DependentUpon>
     </Compile>
     <Compile Include="App_Code\MyAdoHelperSql.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="logout.aspx.cs">
+    <Compile Include="Pages\webPages\logout.aspx.cs">
       <DependentUpon>logout.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="logout.aspx.designer.cs">
+    <Compile Include="Pages\webPages\logout.aspx.designer.cs">
       <DependentUpon>logout.aspx</DependentUpon>
     </Compile>
-    <Compile Include="unreachable.aspx.cs">
+    <Compile Include="Pages\webPages\unreachable.aspx.cs">
       <DependentUpon>unreachable.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="unreachable.aspx.designer.cs">
+    <Compile Include="Pages\webPages\unreachable.aspx.designer.cs">
       <DependentUpon>unreachable.aspx</DependentUpon>
     </Compile>
-    <Compile Include="user.aspx.cs">
+    <Compile Include="Pages\webPages\user.aspx.cs">
       <DependentUpon>user.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="user.aspx.designer.cs">
+    <Compile Include="Pages\webPages\user.aspx.designer.cs">
       <DependentUpon>user.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <None Include="packages.config" />
-    <Content Include="main.Master" />
+    <None Include="Pages\packages.config" />
+    <Content Include="Pages\webPages\main.Master" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

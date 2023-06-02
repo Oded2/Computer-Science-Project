@@ -33,7 +33,7 @@ public class MyAdoHelper
 
     public static SqlConnection ConnectToDb(string fileName)
     {
-        string path = HttpContext.Current.Server.MapPath("App_Data/");//מיקום מסד בפורוייקט
+        string path = HttpContext.Current.Server.MapPath("~/App_Data/");//מיקום מסד בפורוייקט
         path += fileName;
         string connString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=" +
                              path +

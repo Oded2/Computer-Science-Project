@@ -1,0 +1,571 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Quicksand", sans-serif;
+  font-size: large;
+}
+
+:root {
+  --secondary: #383838;
+  --main: #e0e0e0;
+  --tri: #9293af;
+  --light-grey: #f3f3f3;
+  --fourth: rgb(219, 219, 219);
+}
+
+body {
+  background-color: var(--light-grey);
+  font-family: "Quicksand", sans-serif;
+  border: 0;
+}
+
+.header {
+  overflow: hidden;
+  background-color: rgb(75, 75, 75);
+  color: white;
+  min-height: 60px;
+  height: 5vh;
+  width: 100vw;
+  display: table;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+.header div {
+  width: 20em;
+  vertical-align: middle;
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+  font-size: large;
+}
+
+.header a {
+  color: white;
+}
+
+.header a:hover {
+  color: lightgray;
+}
+
+.Wrapper {
+  margin: auto;
+  max-width: 50%;
+}
+.Left {
+  width: 60%;
+  float: left;
+}
+.Right {
+  width: 40%;
+  float: right;
+  overflow: hidden;
+}
+
+p {
+  margin-bottom: 1em;
+}
+
+input:focus {
+  transition: 0.5s;
+  background-color: lightgray;
+}
+
+div.parent {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  height: 90vh;
+  width: 100vw;
+}
+
+h1 {
+  text-align: center;
+}
+div.parent > h1 {
+  position: absolute;
+  top: 5px;
+}
+
+div.main {
+  display: flex;
+  width: 100%;
+  /* height: 100%; */
+}
+
+.content {
+  max-width: 85vw;
+  margin-top: 60px;
+  margin-right: auto;
+  margin-left: auto;
+  overflow: auto;
+  box-shadow: 0 0 20px;
+}
+.content tr {
+  background-color: white;
+  border: 1px solid black;
+  height: 30px;
+}
+
+.content th {
+  text-align: center;
+  width: 200px;
+  background-color: lightblue;
+}
+
+.content td {
+  padding-bottom: 12px;
+  padding-top: 12px;
+  text-align: center;
+  width: 200px;
+  max-width: 400px;
+}
+
+.content input[type="text"],
+.content input[type="tel"],
+.content input[type="email"],
+.content input[type="number"],
+.content input[type="password"] {
+  padding: 12px;
+  font-size: 16px;
+  width: 90%;
+  margin: auto;
+}
+
+.content input[type="reset"],
+.content input[type="submit"] {
+  border: none;
+  height: 60px;
+  width: 100%;
+  font-size: 20px;
+  /* background-color: white; */
+  cursor: pointer;
+}
+.content input[type="reset"]:hover,
+.content input[type="submit"]:hover,
+.content input[type="date"]:hover {
+  background-color: #f2f2f2;
+}
+
+/* .content tr:nth-child(odd) {
+  background-color: #e9e9e9;
+} */
+
+.box {
+  height: 2vh;
+  width: 100vw;
+}
+
+div.third {
+  position: relative;
+  padding: 12px;
+  text-align: center;
+  margin: auto;
+  background-color: var(--main);
+  min-width: 400px;
+  width: 400px;
+  min-height: 600px;
+  height: 600px;
+  justify-content: center;
+  overflow: hidden;
+  z-index: 2;
+  box-shadow: 0 0 20px;
+}
+
+div.third input[type="submit"] {
+  background-color: white;
+  border: none;
+  font-size: 24px;
+  border-radius: 10px;
+}
+
+div.third input[type="submit"]:hover {
+  transition: 0.2s;
+  background-color: lightgray;
+  cursor: pointer;
+}
+
+div.third input {
+  padding: 12px;
+  font-size: 20px;
+  margin-top: 40px;
+}
+
+div.third h2 {
+  margin-top: 12px;
+}
+
+div.third p {
+  margin-top: 40px;
+}
+
+div.loginToSignup {
+  left: 0;
+  position: absolute;
+  bottom: 0;
+  height: 10%;
+  width: 100%;
+}
+
+.pageName {
+  background-color: white;
+  color: black;
+  font-weight: bold;
+}
+
+div.images {
+  float: left;
+  padding: 10px;
+  width: 35%;
+  height: 50%;
+}
+
+div.images > img {
+  height: 500px;
+}
+
+div.images > div {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  display: flex;
+}
+
+div.images p {
+  user-select: none;
+  word-spacing: 200px;
+  margin: auto;
+  padding-right: 1em;
+  padding-left: 1em;
+  color: #333333;
+  text-align: center;
+}
+
+div.images span {
+  border-radius: 10px;
+  padding: 5px;
+  cursor: pointer;
+}
+
+div.images span:active {
+  color: #636363;
+}
+
+div.image_holder > img {
+  margin: auto;
+  height: 500px;
+}
+
+div.image_holder {
+  border: 100px black;
+  height: 200%;
+  width: 100%;
+}
+
+div.divError {
+  position: absolute;
+  color: red;
+  font-weight: bold;
+  font-size: xx-large;
+}
+
+.textHolder {
+  padding: 24px;
+  float: right;
+  height: 50%;
+  width: 60%;
+}
+
+div.textHolder h1 {
+  text-align: left;
+  font-size: 80px;
+}
+
+div.homeMain {
+  padding: 12px;
+  line-height: 50px;
+  clear: both;
+  min-height: 200px;
+  height: 30%;
+}
+
+div.homeMain p {
+  font-size: 30px;
+}
+
+div.myFL {
+  font-size: 30px;
+  padding: 20px;
+}
+
+div.myFLmain {
+  max-height: 60vh;
+  width: 100vw;
+  overflow: auto;
+}
+
+table.myFLmain {
+  margin: auto;
+  width: 100%;
+  height: 100%;
+}
+
+table.myFLmain tr td {
+  border: 4px solid black;
+}
+
+table.myFLmain td {
+  padding: 6px;
+  max-width: 200px;
+  overflow: auto;
+}
+
+table.myFLmain tr.FL {
+  background-color: lightgray;
+  font-size: medium;
+  height: 30px;
+  min-height: 30px;
+  text-align: center;
+}
+
+div.logParent {
+  height: 90vh;
+  width: 100vw;
+  max-height: 100%;
+  max-width: 100%;
+}
+
+div.logMain {
+  height: 100%;
+  width: 100%;
+}
+
+div.logMain table {
+  margin: auto;
+  height: 90%;
+  width: 90%;
+  table-layout: fixed;
+}
+
+div.logMain table tr td {
+  border: 2px solid black;
+}
+
+div.logMain td {
+  height: 100px;
+  font-size: 20px;
+  text-align: center;
+}
+
+div.logMain tr:nth-child(even) {
+  background-color: lightgray;
+}
+
+div.logMain textarea {
+  resize: none;
+  width: 98%;
+  height: 90%;
+  padding: 5px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+}
+
+div.logMain input[type="text"] {
+  padding: 12px;
+  width: 90%;
+  font-size: 16px;
+}
+
+div.aboutLeft {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  clear: left;
+  float: left;
+  padding: 30px;
+  width: 30%;
+}
+div.aboutLeft h1,
+div.aboutLeft i {
+  text-align: center;
+  font-size: 100px;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+div.aboutLeft,
+div.aboutRight {
+  height: 200px;
+}
+div.aboutRight {
+  clear: right;
+  float: right;
+  padding: 30px;
+  min-width: 700px;
+  width: 50%;
+}
+
+div.aboutRight p {
+  font-size: 20px;
+  line-height: 1.5em;
+}
+
+div.logButton {
+  padding: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+}
+
+div.logButton button {
+  border: none;
+  cursor: pointer;
+  width: 30%;
+  height: 100%;
+  background-color: lightgray;
+  border-radius: 10px;
+  font-size: 20px;
+}
+div.logButton button:hover {
+  background-color: rgb(182, 182, 182);
+}
+div.logButton button:active {
+  background-color: gray;
+}
+
+div.main h1 {
+  text-align: center;
+}
+
+div.unreachableParent {
+  margin: auto;
+  padding: 30px;
+}
+div.unreachableParent > h1 {
+  text-align: left;
+  font-size: 100px;
+}
+div.unreachableParent > h2 {
+  text-align: left;
+  font-size: 50px;
+}
+div.unreachableParent > img {
+  max-height: 60vh;
+}
+div.unreachableRedirect {
+  height: 40%;
+  min-height: 400px;
+  width: 40%;
+  float: right;
+  font-size: 50px;
+}
+
+div.roundImage {
+  border-radius: 40px;
+}
+
+div.unreachableParent a {
+  font-size: 50px;
+}
+
+.tdLeft {
+  padding: 10px;
+  text-align: left !important;
+}
+
+div.flightParent {
+  max-width: 100%;
+  height: 90vh;
+  max-height: 100%;
+  width: 100vw;
+  overflow: auto;
+}
+
+div.flightMap {
+  overflow: auto;
+  margin-right: 10%;
+  margin-left: 5%;
+  float: left;
+  margin-bottom: auto;
+  box-shadow: 20px 20px 50px grey;
+}
+
+div.flightNotes {
+  height: 10em;
+  text-align: left;
+  box-shadow: 20px 20px 50px grey;
+  padding: 12px;
+  overflow: auto;
+}
+
+div.flightNoteTitle {
+  margin-bottom: 2%;
+  height: 50px;
+}
+div.flightNoteTitle > h1 {
+  text-align: center;
+  font-size: 50px;
+}
+
+div.flightNoteTitle,
+div.flightNotes {
+  float: right;
+  margin-right: 20%;
+  width: 40%;
+}
+
+div.flightInfo {
+  position: relative;
+  float: left;
+  margin-top: 2%;
+  margin-left: 2%;
+  padding: 12px;
+  min-height: 400px;
+  height: 50%;
+  width: 50%;
+}
+div.flightInfo > h1,
+div.flightInfo span {
+  text-align: center;
+  font-size: 30px;
+}
+div.flightInfo .left {
+  text-align: left;
+}
+
+div.flightInfo .right {
+  text-align: right;
+}
+
+div.flightInfo p,
+div.flightInfo span {
+  font-size: 30px;
+}
+div.flightTitle {
+  width: 100%;
+  height: 5%;
+}
+
+div.flightTitle > h1,
+div.flightTitle span {
+  font-size: 30px;
+}
+button.deleteFlight {
+  border-radius: 10px;
+  border: none;
+  color: white;
+  cursor: pointer;
+  margin-top: 10%;
+  bottom: 30%;
+  width: 100%;
+  height: 50px;
+  background-color: #ff4760;
+  font-size: 30px;
+}
+button.deleteFlight:hover {
+  background-color: #ff5f74;
+}
+button.deleteFlight:active {
+  background-color: #ff5555;
+}
