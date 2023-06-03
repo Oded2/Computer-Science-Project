@@ -2,7 +2,7 @@
     Inherits="Odedprojectpleasework.user" %>
 
     <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
-        <script src="script.js"></script>
+        <script src="../javascript/script.js"></script>
     </asp:Content>
     <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
         <form runat="server" onsubmit="return validateUserEdit()">
