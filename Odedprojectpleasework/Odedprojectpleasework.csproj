@@ -67,6 +67,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include=".gitignore" />
     <Content Include="Gallery\images\image %282%29.jpeg" />
     <Content Include="Gallery\images\image %283%29.jpeg" />
     <Content Include="Gallery\images\image %284%29.jpeg" />

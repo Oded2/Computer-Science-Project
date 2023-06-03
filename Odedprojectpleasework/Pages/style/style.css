@@ -569,3 +569,9 @@ button.deleteFlight:hover {
 button.deleteFlight:active {
   background-color: #ff5555;
 }
+
+#id::-webkit-outer-spin-button,
+#id::-webkit-inner-spin-button{
+    appearance: none;
+}
+

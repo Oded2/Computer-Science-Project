@@ -53,8 +53,8 @@ namespace Odedprojectpleasework
             {
 
                 //form was submitted
-                String id = Request.Form["id"];
-                String password = Request.Form["password"];
+                String id = Request.Form["id"].Replace("'", "''");
+                String password = Request.Form["password"].Replace("'", "''");
                 String sql = "select * from Users where id ='" + id + "' and password = '" + password + "'";
                 var dt = MyAdoHelper.ExecuteDataTable("Database1.mdf", sql);
                 if (dt.Rows.Count == 0)

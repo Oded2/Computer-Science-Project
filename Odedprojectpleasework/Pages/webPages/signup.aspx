@@ -19,7 +19,7 @@ Inherits="Odedprojectpleasework.signup" %>
           <tr>
             <th>ID</th>
             <td>
-              <input type="text" id="id" name="id" maxlength="10" required value="<%=Request.Form["id"] %>" />
+              <input type="number" id="id"  name="id" maxlength="10" required value="<%=Request.Form["id"] %>" />
             </td>
             <th>Create a password</th>
             <td>

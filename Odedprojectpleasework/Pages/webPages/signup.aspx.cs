@@ -18,7 +18,7 @@ namespace Odedprojectpleasework
 
         protected void Page_Load(object sender, EventArgs e)
         {
-            
+
             if (Request.Form["submit"] != null)
             {
 
@@ -51,17 +51,27 @@ namespace Odedprojectpleasework
                     String email = Request.Form["email"];
                     String spam = Request.Form["spam"];
                     String password = Request.Form["password"];
-                    int p = 0;
+                    int isSpam = 0;
                     if (spam == "on")
                     {
-                        p = 1;
+                        isSpam = 1;
                     }
                     if (errMessage == "")
                     {
 
 
-                        String sql = "insert into Users values('" + id + "',N'" + fname + "',N'" + lname + "',N'" + tel + "',N'" + address + "','" + dob + "'," + gpa + ",'" +
-                            email + "','" + p + "', '" + password + "', 0)";
+                        String sql = "insert into Users values('" +
+                            id.Replace("'", "''") +
+                            "',N'" + fname.Replace("'", "''") +
+                            "',N'" + lname.Replace("'", "''") +
+                            "',N'" + tel.Replace("'", "''") +
+                            "',N'" + address.Replace("'", "''") + "'," +
+                            "'" + dob.Replace("'", "''") + "'," +
+                            gpa +
+                            ",'" + email.Replace("'", "''") + "','" +
+                            isSpam +
+                            "', '" + password.Replace("'", "''") +
+                            "', 0)";
                         int rowsAffected = MyAdoHelper.DoQuery("Database1.mdf", sql);
                         if (rowsAffected == 0)
                         {

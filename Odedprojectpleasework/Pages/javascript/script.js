@@ -7,72 +7,81 @@
  * passes all the validation checks, or `false` if it fails any of them.
  */
 function validateSignupForm() {
-  let b = true;
-
-  b = b && validateText("First name", document.getElementById("fname"));
-  b = b && validateText("Last name", document.getElementById("lname"));
-  b = b && validateText("Address", document.getElementById("address"));
-  b = b && validateText("Password", document.getElementById("password"));
-  b = b && validateText("Birthday", document.getElementById("dob"));
-  return b;
+    let b = true;
+    b = b && validateText("ID", document.getElementById("id"));
+    b = b && validateText("First name", document.getElementById("fname"));
+    b = b && validateText("Last name", document.getElementById("lname"));
+    b = b && validateText("Address", document.getElementById("address"));
+    b = b && validateText("Password", document.getElementById("password"));
+    b = b && validateText("Birthday", document.getElementById("dob"));
+    return b;
 }
 
 //powers the validate signup form
 function validateText(name, val) {
-  og = val;
-  val = val.value;
+    og = val;
+    val = val.value;
 
-  if (!val || val.length == 0) {
-    og.style.border = "3px solid red";
-    setTimeout(function () {
-      alert(name + " cannot be empty");
-    }, 10);
-    og.focus();
-    return false;
-  }
-  if (val.indexOf("@") > 0) {
-    og.style.border = "3px solid red";
-    setTimeout(function () {
-      alert(name + " cannot contain a strudle");
-    }, 10);
-    og.focus();
-    return false;
-  }
-  if (val.indexOf("#") > 0) {
-    og.style.border = "3px solid red";
-    setTimeout(function () {
-      alert(name + " cannot contain a hashtag");
-    }, 10);
-    og.focus();
-    return false;
-  }
-  if (val.indexOf("%") > 0) {
-    og.style.border = "2px solid red";
-    setTimeout(function () {
-      alert(name + " cannot contain a percentage sign");
-    }, 10);
-    og.focus();
-    return false;
-  }
-  if (val.indexOf("*") > 0) {
-    og.style.border = "3px solid red";
-    setTimeout(function () {
-      alert(name + " cannot contain an asterisk");
-    }, 10);
-    og.focus();
-    return false;
-  }
+    if (!val || val.length == 0) {
+        og.style.border = "3px solid red";
+        setTimeout(function () {
+            alert(name + " cannot be empty");
+        }, 10);
+        og.focus();
+        return false;
+    }
+    if (val.indexOf("@") > 0) {
+        og.style.border = "3px solid red";
+        setTimeout(function () {
+            alert(name + " cannot contain a strudle");
+        }, 10);
+        og.focus();
+        return false;
+    }
+    if (val.indexOf("#") > 0) {
+        og.style.border = "3px solid red";
+        setTimeout(function () {
+            alert(name + " cannot contain a hashtag");
+        }, 10);
+        og.focus();
+        return false;
+    }
+    if (val.indexOf("%") > 0) {
+        og.style.border = "2px solid red";
+        setTimeout(function () {
+            alert(name + " cannot contain a percentage sign");
+        }, 10);
+        og.focus();
+        return false;
+    }
+    if (val.indexOf("*") > 0) {
+        og.style.border = "3px solid red";
+        setTimeout(function () {
+            alert(name + " cannot contain an asterisk");
+        }, 10);
+        og.focus();
+        return false;
+    }
+    if (val.indexOf("'") > 0) {
 
-  return true;
+        og.style.border = "3px solid red";
+        setTimeout(function () {
+            alert(name + " cannot contain an apostrophe");
+        }, 10);
+        og.focus();
+        return false;
+    }
+
+    return true;
 }
 
 /**
  * The function sets the maximum date for a date input field to the current date.
  */
 function maxDay() {
-  var currentDate = new Date();
-  var formattedDate = currentDate.toISOString().split("T")[0];
-  document.getElementById("logDate").max = formattedDate;
+    var currentDate = new Date();
+    var formattedDate = currentDate.toISOString().split("T")[0];
+    document.getElementById("logDate").max = formattedDate;
 }
 
 /**
@@ -82,36 +91,36 @@ function maxDay() {
  * `false`.
  */
 function validateFlightLog() {
-  let b = true;
-  b = b && validateText("Date", document.getElementById("logDate"));
-  b = b && validateText("Callsign", document.getElementById("callsign"));
-  b =
-    b &&
-    validateText("Time of Departure", document.getElementById("logTakeoff"));
-  b =
-    b &&
-    validateText(
-      "Airport of Departure",
-      document.getElementById("logAirportTakeoff")
-    );
-  b =
-    b && validateText("Time of Landing", document.getElementById("logLanding"));
-  b =
-    b &&
-    validateText(
-      "Airport of Destination",
-      document.getElementById("logAirportLanding")
-    );
-  b =
-    b && validateText("Model of Aircraft", document.getElementById("logModel"));
-  return b;
+    let b = true;
+    b = b && validateText("Date", document.getElementById("logDate"));
+    b = b && validateText("Callsign", document.getElementById("callsign"));
+    b =
+        b &&
+        validateText("Time of Departure", document.getElementById("logTakeoff"));
+    b =
+        b &&
+        validateText(
+            "Airport of Departure",
+            document.getElementById("logAirportTakeoff")
+        );
+    b =
+        b && validateText("Time of Landing", document.getElementById("logLanding"));
+    b =
+        b &&
+        validateText(
+            "Airport of Destination",
+            document.getElementById("logAirportLanding")
+        );
+    b =
+        b && validateText("Model of Aircraft", document.getElementById("logModel"));
+    return b;
 }
 
 /**
  * The function redirects the user to an email address when the "contact us" button is clicked.
  */
 function contactUs() {
-  document.location.href = "mailto:oded@benamotz.com";
+    document.location.href = "mailto:oded@benamotz.com";
 }
 
 /**
@@ -122,12 +131,12 @@ function contactUs() {
  * false again after setting the document location to a specific URL.
  */
 function deleteFlight(id) {
-  if (!confirm("Are you sure you want to delete this flight?")) {
-    return false;
-  }
+    if (!confirm("Are you sure you want to delete this flight?")) {
+        return false;
+    }
 
-  document.location.href = `flight.aspx?id=${id}&action=del`;
-  return false;
+    document.location.href = `flight.aspx?id=${id}&action=del`;
+    return false;
 }
 
 /**
@@ -137,16 +146,16 @@ function deleteFlight(id) {
  * cancels either confirmation prompt, the function will return false.
  */
 function validateUserEdit() {
-  if (document.getElementById("ContentPlaceHolder1_userDel").checked) {
-    if (!confirm("Are you sure you want to DELETE the user?")) {
-      return false;
+    if (document.getElementById("ContentPlaceHolder1_userDel").checked) {
+        if (!confirm("Are you sure you want to DELETE the user?")) {
+            return false;
+        }
+        if (
+            !confirm("Double checking: Are you sure you want to DELETE the user?")
+        ) {
+            return false;
+        }
     }
-    if (
-      !confirm("Double checking: Are you sure you want to DELETE the user?")
-    ) {
-      return false;
-    }
-  }
 
-  return true;
+    return true;
 }
