@@ -11,7 +11,7 @@ namespace Odedprojectpleasework
 {
     public partial class flight : System.Web.UI.Page
     {
-        public int fligthId;
+        public int flightID;
         protected void Page_Load(object sender, EventArgs e)
         {
             var userId = Session["user_id"];
@@ -25,7 +25,7 @@ namespace Odedprojectpleasework
             userId = userId.ToString();
             try
             {
-                fligthId = int.Parse(Request.QueryString["id"]);
+                flightID = int.Parse(Request.QueryString["id"]);
             }
             catch (Exception ex)
             {
@@ -35,20 +35,20 @@ namespace Odedprojectpleasework
             var act = Request.QueryString["action"];
             if(act != null && act == "del")
             {
-                String delSQL = "delete from FlightLog where id=" + fligthId + " and UserId = " + userId;
+                String delSQL = "delete from FlightLog where id=" + flightID + " and UserId = " + userId;
                 MyAdoHelper.ExecuteNonQuery("Database1.mdf", delSQL);
                 Response.Redirect("flights.aspx");
             }
 
 
-            String sql = "select * from FlightLog where id=" + fligthId + " and UserId = " + userId;
+            String sql = "select * from FlightLog where id=" + flightID + " and UserId = " + userId;
 
             var dt = MyAdoHelper.ExecuteDataTable("Database1.mdf", sql);
             if(dt.Rows.Count == 0) {
                 Response.Redirect("flights.aspx");
                 return;
             }
-            populateData(userId.ToString(), fligthId);
+            populateData(userId.ToString(), flightID);
 
         }
 

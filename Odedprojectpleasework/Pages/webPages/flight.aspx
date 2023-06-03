@@ -41,7 +41,7 @@
             <span id="callsign" runat="server"> callsign of your aircraft</span>
           </p>
           <br />
-          <button id="delete" class="deleteFlight" onclick="return deleteFlight(<%=fligthId%>)">
+          <button id="delete" class="deleteFlight" onclick="return deleteFlight(<%=flightID%>)">
             Delete Flight
           </button>
         </div>
